@@ -6559,3 +6559,6 @@ table .checkbox input[type="checkbox"] {
 .alert-danger a {
   color: #953b39;
 }
+.page-node .tabs--primary.nav-tabs {
+  display: none;
+}
