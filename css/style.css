@@ -6559,8 +6559,16 @@ table .checkbox input[type="checkbox"] {
 .alert-danger a {
   color: #953b39;
 }
-.navbar-brand {
+.navbar-brand,
+.lead {
   color: #f80400;
+}
+.navbar-nav {
+  color: white;
+  background-color: #f80400;
+}
+.navbar .logo img {
+  width: 150px;
 }
 h1,
 h2,
