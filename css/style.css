@@ -6602,7 +6602,7 @@ table .checkbox input[type="checkbox"] {
   color: white;
   background-color: #f80400;
 }
-.navbar-default .navbar .logo img {
+.navbar-default .navbar-header .logo img {
   width: 150px;
 }
 h1,
