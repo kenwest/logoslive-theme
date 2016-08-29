@@ -6563,11 +6563,16 @@ table .checkbox input[type="checkbox"] {
 .lead {
   color: #f80400;
 }
+.navbar-default .navbar-nav {
+  color: white;
+  background-color: #f80400;
+}
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: white;
   background-color: #f80400;
+  font-weight: bold;
 }
 .navbar .logo img {
   width: 150px;
