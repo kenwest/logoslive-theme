@@ -1,38 +1,57 @@
-.navbar-default .navbar-brand,
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.lead {
-  color: @brand-primary;
+.navbar-default {
+  margin: 0;
+  border: 0;
+  padding: 0;
   background-color: white;
-}
 
-.navbar-default .navbar-brand {
-  font-size: 30px;
-}
+  .navbar-brand,
+  .navbar-brand:hover,
+  .navbar-brand:focus,
+  .lead {
+    color: @brand-primary;
+  }
 
-.navbar-default .navbar-nav {
-  background-color: @brand-primary;
+  .navbar-brand {
+    font-size: @font-size-h1;
+  }
 
-  > .active {
-    > a,
-    > a:hover,
-    > a:focus {
-      color: white;
-      background-color: @brand-primary;
-      font-weight: bold;
+  .lead {
+    font-size: floor(@font-size-base * 1.15);
+
+    @media (min-width: @screen-sm-min) {
+      font-size: floor(@font-size-base * 1.15);
     }
   }
 
-  > .leaf {
-    > a,
-    > a:hover,
-    > a:focus {
-      color: white;
-      background-color: @brand-primary;
+  .navbar-collapse {
+    padding: 0;
+  }
+
+  .navbar-nav {
+    background-color: @brand-primary;
+    width: 100%;
+
+    > .active {
+      > a,
+      > a:hover,
+      > a:focus {
+        color: white;
+        background-color: @brand-primary;
+        font-weight: bold;
+      }
+    }
+
+    > .leaf {
+      > a,
+      > a:hover,
+      > a:focus {
+        color: white;
+        background-color: @brand-primary;
+      }
     }
   }
-}
 
-.navbar .logo img {
-  width: 150px;
+  .navbar .logo img {
+    width: 150px;
+  }
 }

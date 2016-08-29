@@ -6559,18 +6559,35 @@ table .checkbox input[type="checkbox"] {
 .alert-danger a {
   color: #953b39;
 }
+.navbar-default {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: white;
+}
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
-.lead {
+.navbar-default .lead {
   color: #f80400;
-  background-color: white;
 }
 .navbar-default .navbar-brand {
-  font-size: 30px;
+  font-size: 36px;
+}
+.navbar-default .lead {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .navbar-default .lead {
+    font-size: 16px;
+  }
+}
+.navbar-default .navbar-collapse {
+  padding: 0;
 }
 .navbar-default .navbar-nav {
   background-color: #f80400;
+  width: 100%;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -6585,7 +6602,7 @@ table .checkbox input[type="checkbox"] {
   color: white;
   background-color: #f80400;
 }
-.navbar .logo img {
+.navbar-default .navbar .logo img {
   width: 150px;
 }
 h1,
