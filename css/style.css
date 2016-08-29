@@ -6559,6 +6559,9 @@ table .checkbox input[type="checkbox"] {
 .alert-danger a {
   color: #953b39;
 }
+.navbar.container {
+  max-width: 100%;
+}
 .navbar.container > .container {
   width: 100%;
 }
