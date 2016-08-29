@@ -6560,6 +6560,7 @@ table .checkbox input[type="checkbox"] {
   color: #953b39;
 }
 .navbar.container {
+  margin-top: 0;
   max-width: 100%;
 }
 .navbar.container > .container {
