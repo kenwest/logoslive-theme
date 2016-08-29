@@ -6560,8 +6560,14 @@ table .checkbox input[type="checkbox"] {
   color: #953b39;
 }
 .navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
 .lead {
   color: #f80400;
+  background-color: white;
+}
+.navbar-default .navbar-brand {
+  font-size: 30px;
 }
 .navbar-default .navbar-nav {
   background-color: #f80400;
