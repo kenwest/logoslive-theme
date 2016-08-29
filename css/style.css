@@ -6559,7 +6559,7 @@ table .checkbox input[type="checkbox"] {
 .alert-danger a {
   color: #953b39;
 }
-.navbar-brand,
+.navbar-default .navbar-brand,
 .lead {
   color: #f80400;
 }
