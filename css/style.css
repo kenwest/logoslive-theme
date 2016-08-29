@@ -6564,6 +6564,7 @@ table .checkbox input[type="checkbox"] {
   border: 0;
   padding: 0;
   background-color: white;
+  width: 100%;
 }
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
