@@ -3,9 +3,15 @@
   color: @brand-primary;
 }
 
-.navbar-nav {
-  color: white;
-  background-color: @brand-primary;
+.navbar-default .navbar-nav {
+  > .active {
+    > a,
+    > a:hover,
+    > a:focus {
+      color: white;
+      background-color: @brand-primary;
+    }
+  }
 }
 
 .navbar .logo img {
