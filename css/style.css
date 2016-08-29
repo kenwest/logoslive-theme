@@ -6564,7 +6564,6 @@ table .checkbox input[type="checkbox"] {
   color: #f80400;
 }
 .navbar-default .navbar-nav {
-  color: white;
   background-color: #f80400;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -6573,6 +6572,12 @@ table .checkbox input[type="checkbox"] {
   color: white;
   background-color: #f80400;
   font-weight: bold;
+}
+.navbar-default .navbar-nav > .leaf > a,
+.navbar-default .navbar-nav > .leaf > a:hover,
+.navbar-default .navbar-nav > .leaf > a:focus {
+  color: white;
+  background-color: #f80400;
 }
 .navbar .logo img {
   width: 150px;
