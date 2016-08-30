@@ -6585,9 +6585,15 @@ table .checkbox input[type="checkbox"] {
   line-height: inherit;
   padding: 0;
   margin: 0;
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  .navbar-default .navbar-brand {
+    font-size: 36px;
+  }
 }
 .navbar-default .lead {
-  font-size: 16px;
+  font-size: 14px;
 }
 @media (min-width: 768px) {
   .navbar-default .lead {
