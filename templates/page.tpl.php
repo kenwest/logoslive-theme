@@ -120,9 +120,7 @@
 </header>
 
 <header role="banner" id="page-header">
-  <div class="container">
-    <?php print render($page['header']); ?>
-  </div>
+  <?php print render($page['header']); ?>
 </header> <!-- /#page-header -->
 
 <div class="main-container container">

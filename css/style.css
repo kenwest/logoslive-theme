@@ -6653,10 +6653,48 @@ table .checkbox input[type="checkbox"] {
   background: rgba(0, 0, 0, 0) url("/sites/default/files/images/melbourne/logoslive/logos-live-audience.jpg") repeat scroll 50% 50%;
   height: 500px;
 }
+.front .region-header section {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.front .region-header section:before,
+.front .region-header section:after {
+  content: " ";
+  display: table;
+}
+.front .region-header section:after {
+  clear: both;
+}
+.front .region-header section:before,
+.front .region-header section:after {
+  content: " ";
+  display: table;
+}
+.front .region-header section:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .front .region-header section {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .front .region-header section {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .front .region-header section {
+    width: 1170px;
+  }
+}
 .front .region-header .menu.nav {
   position: relative;
   display: inline-block;
   vertical-align: middle;
+  width: 50%;
 }
 .front .region-header .menu.nav > .btn {
   position: relative;
@@ -6683,6 +6721,7 @@ table .checkbox input[type="checkbox"] {
   color: #333333;
   background-color: #ffffff;
   border-color: #cccccc;
+  width: 50%;
 }
 .front .region-header .menu.nav li:hover,
 .front .region-header .menu.nav li:focus,
@@ -6732,9 +6771,6 @@ fieldset[disabled] .front .region-header .menu.nav li.active {
 .front .region-header .menu.nav li a {
   font-size: 18px;
   font-weight: bold;
-}
-.block-search {
-  margin: 0 10%;
 }
 h1,
 h2,
