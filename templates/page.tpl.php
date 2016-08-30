@@ -82,13 +82,15 @@
       </a>
       <?php endif; ?>
 
+      <div class="navbar-header-name">
       <?php if (!empty($site_name)): ?>
-      <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
+        <p><a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></p>
       <?php endif; ?>
 
       <?php if (!empty($site_slogan)): ?>
-        <span class="lead"><?php print $site_slogan; ?></span>
+        <p class="lead"><?php print $site_slogan; ?></p>
       <?php endif; ?>
+      </div>
       
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
