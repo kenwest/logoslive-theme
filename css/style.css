@@ -6647,7 +6647,7 @@ table .checkbox input[type="checkbox"] {
 }
 @media (min-width: 768px) {
   .navbar-default .navbar-header-name {
-    max-width: 70%;
+    max-width: 80%;
   }
 }
 h1,
