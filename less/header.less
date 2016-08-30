@@ -72,12 +72,24 @@
   .navbar-header {
     margin: 0;
 
-    .logo img {
+    .logo {
       width: 150px;
+
+      @media (min-width: @screen-sm-min) {
+        max-width: 30%;
+      }
+
+      img {
+        width: 100%;
+      }
     }
   }
 
   .navbar-header-name {
     display: inline-block;
+
+    @media (min-width: @screen-sm-min) {
+      max-width: 45%;
+    }
   }
 }
