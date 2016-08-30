@@ -6630,7 +6630,7 @@ table .checkbox input[type="checkbox"] {
   margin: 0;
 }
 .navbar-default .navbar-header .logo {
-  max-width: 30%;
+  max-width: 35%;
   padding-left: 15px;
 }
 @media (min-width: 768px) {
@@ -6644,7 +6644,7 @@ table .checkbox input[type="checkbox"] {
 }
 .navbar-default .navbar-header-name {
   display: inline-block;
-  max-width: 45%;
+  max-width: 50%;
 }
 @media (min-width: 768px) {
   .navbar-default .navbar-header-name {
