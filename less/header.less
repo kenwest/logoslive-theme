@@ -22,7 +22,11 @@
   }
 
   .navbar-brand {
+    float: none;
     font-size: @font-size-h1;
+    line-height: inherit;
+    padding: 0;
+    margin: 0;
   }
 
   .lead {
@@ -41,6 +45,7 @@
     background-color: @brand-primary;
     width: 100%;
     font-size: @font-size-large;
+    margin: 0;
 
     > .leaf {
       > a,
@@ -65,5 +70,9 @@
 
   .navbar-header .logo img {
     width: 150px;
+  }
+
+  .navbar-header-name {
+    display: inline-block;
   }
 }
