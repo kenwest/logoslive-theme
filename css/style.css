@@ -6694,7 +6694,29 @@ table .checkbox input[type="checkbox"] {
   }
 }
 .front .region-header .menu.nav {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
   width: 100%;
+}
+.front .region-header .menu.nav > .btn {
+  position: relative;
+  float: left;
+}
+.front .region-header .menu.nav > .btn:hover,
+.front .region-header .menu.nav > .btn:focus,
+.front .region-header .menu.nav > .btn:active,
+.front .region-header .menu.nav > .btn.active {
+  z-index: 2;
+}
+.front .region-header .menu.nav > .btn:focus {
+  outline: none;
+}
+.front .region-header .menu.nav .btn + .btn,
+.front .region-header .menu.nav .btn + .btn-group,
+.front .region-header .menu.nav .btn-group + .btn,
+.front .region-header .menu.nav .btn-group + .btn-group {
+  margin-left: -1px;
 }
 @media (min-width: 480px) {
   .front .region-header .menu.nav {
