@@ -6693,6 +6693,14 @@ table .checkbox input[type="checkbox"] {
     width: 1170px;
   }
 }
+.front .region-header .logos-live-links {
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .front .region-header .logos-live-links {
+    width: 50%;
+  }
+}
 .front .region-header .menu.nav {
   position: relative;
   display: inline-block;
