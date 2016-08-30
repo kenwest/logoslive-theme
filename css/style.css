@@ -6694,29 +6694,7 @@ table .checkbox input[type="checkbox"] {
   }
 }
 .front .region-header .menu.nav {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
   width: 100%;
-}
-.front .region-header .menu.nav > .btn {
-  position: relative;
-  float: left;
-}
-.front .region-header .menu.nav > .btn:hover,
-.front .region-header .menu.nav > .btn:focus,
-.front .region-header .menu.nav > .btn:active,
-.front .region-header .menu.nav > .btn.active {
-  z-index: 2;
-}
-.front .region-header .menu.nav > .btn:focus {
-  outline: none;
-}
-.front .region-header .menu.nav .btn + .btn,
-.front .region-header .menu.nav .btn + .btn-group,
-.front .region-header .menu.nav .btn-group + .btn,
-.front .region-header .menu.nav .btn-group + .btn-group {
-  margin-left: -1px;
 }
 @media (min-width: 480px) {
   .front .region-header .menu.nav {
@@ -6724,57 +6702,7 @@ table .checkbox input[type="checkbox"] {
   }
 }
 .front .region-header .menu.nav li {
-  position: relative;
-  float: left;
-  color: #333333;
-  background-color: #ffffff;
-  border-color: #cccccc;
   width: 50%;
-}
-.front .region-header .menu.nav li:hover,
-.front .region-header .menu.nav li:focus,
-.front .region-header .menu.nav li:active,
-.front .region-header .menu.nav li.active {
-  z-index: 2;
-}
-.front .region-header .menu.nav li:focus {
-  outline: none;
-}
-.front .region-header .menu.nav li:hover,
-.front .region-header .menu.nav li:focus,
-.front .region-header .menu.nav li:active,
-.front .region-header .menu.nav li.active,
-.open .dropdown-toggle.front .region-header .menu.nav li {
-  color: #333333;
-  background-color: #ebebeb;
-  border-color: #adadad;
-}
-.front .region-header .menu.nav li:active,
-.front .region-header .menu.nav li.active,
-.open .dropdown-toggle.front .region-header .menu.nav li {
-  background-image: none;
-}
-.front .region-header .menu.nav li.disabled,
-.front .region-header .menu.nav li[disabled],
-fieldset[disabled] .front .region-header .menu.nav li,
-.front .region-header .menu.nav li.disabled:hover,
-.front .region-header .menu.nav li[disabled]:hover,
-fieldset[disabled] .front .region-header .menu.nav li:hover,
-.front .region-header .menu.nav li.disabled:focus,
-.front .region-header .menu.nav li[disabled]:focus,
-fieldset[disabled] .front .region-header .menu.nav li:focus,
-.front .region-header .menu.nav li.disabled:active,
-.front .region-header .menu.nav li[disabled]:active,
-fieldset[disabled] .front .region-header .menu.nav li:active,
-.front .region-header .menu.nav li.disabled.active,
-.front .region-header .menu.nav li[disabled].active,
-fieldset[disabled] .front .region-header .menu.nav li.active {
-  background-color: #ffffff;
-  border-color: #cccccc;
-}
-.front .region-header .menu.nav li .badge {
-  color: #ffffff;
-  background-color: #fff;
 }
 .front .region-header .menu.nav li a {
   font-size: 18px;
