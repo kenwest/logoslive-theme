@@ -6596,13 +6596,14 @@ table .checkbox input[type="checkbox"] {
 .navbar-default .navbar-nav {
   background-color: #f80400;
   width: 100%;
+  font-weight: bold;
+  font-size: 18px;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #f80400;
-  font-weight: bold;
+  background-color: #444444;
 }
 .navbar-default .navbar-nav > .leaf > a,
 .navbar-default .navbar-nav > .leaf > a:hover,
@@ -6623,4 +6624,8 @@ h6 {
 }
 .page-node .tabs--primary.nav-tabs {
   display: none;
+}
+.footer {
+  background-color: #444444;
+  color: white;
 }
