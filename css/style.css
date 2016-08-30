@@ -6693,11 +6693,11 @@ table .checkbox input[type="checkbox"] {
     width: 1170px;
   }
 }
-.front .region-header .logos-live-links {
+.front .region-header .logos-live-links .btn {
   width: 100%;
 }
 @media (min-width: 480px) {
-  .front .region-header .logos-live-links {
+  .front .region-header .logos-live-links .btn {
     width: 50%;
   }
 }
