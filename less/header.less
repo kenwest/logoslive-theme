@@ -129,6 +129,7 @@
       }
 
       li {
+        /* Assumes the classes "btn btn-default" are added by the Menu Attributes module */
         width: 50%;
 
         a {
@@ -136,6 +137,16 @@
           font-weight: bold;
           text-align: center;
         }
+      }
+
+      /* Needed since .btn-group is not a mixin */
+      li:not(:first-child) {
+        .border-left-radius(0);
+      }
+
+      /* Needed since .btn-group is not a mixin */
+      li:not(:last-child) {
+        .border-right-radius(0);
       }
     }
   }

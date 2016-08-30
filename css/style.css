@@ -6698,6 +6698,10 @@ table .checkbox input[type="checkbox"] {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
+  /* Needed since .btn-group is not a mixin */
+
+  /* Needed since .btn-group is not a mixin */
+
 }
 .front .region-header .menu.nav > .btn {
   position: relative;
@@ -6724,12 +6728,22 @@ table .checkbox input[type="checkbox"] {
   }
 }
 .front .region-header .menu.nav li {
+  /* Assumes the classes "btn btn-default" are added by the Menu Attributes module */
+
   width: 50%;
 }
 .front .region-header .menu.nav li a {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
+}
+.front .region-header .menu.nav li:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.front .region-header .menu.nav li:not(:last-child) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 h1,
 h2,
