@@ -6753,6 +6753,14 @@ table .checkbox input[type="checkbox"] {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
+.front .region-header .content-search {
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .front .region-header .content-search {
+    width: 50%;
+  }
+}
 h1,
 h2,
 h3,
