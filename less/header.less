@@ -40,17 +40,7 @@
   .navbar-nav {
     background-color: @brand-primary;
     width: 100%;
-    font-weight: bold;
     font-size: @font-size-large;
-
-    > .active {
-      > a,
-      > a:hover,
-      > a:focus {
-        color: white;
-        background-color: @text-color;
-      }
-    }
 
     > .leaf {
       > a,
@@ -58,6 +48,17 @@
       > a:focus {
         color: white;
         background-color: @brand-primary;
+        font-weight: bold;
+      }
+    }
+
+    > .active {
+      > a,
+      > a:hover,
+      > a:focus {
+        color: white;
+        background-color: @text-color;
+        font-weight: bold;
       }
     }
   }
