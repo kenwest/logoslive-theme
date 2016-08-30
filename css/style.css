@@ -6658,6 +6658,8 @@ table .checkbox input[type="checkbox"] {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .front .region-header section:before,
 .front .region-header section:after {
@@ -6694,7 +6696,7 @@ table .checkbox input[type="checkbox"] {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 50%;
+  width: 100%;
 }
 .front .region-header .menu.nav > .btn {
   position: relative;
@@ -6714,6 +6716,11 @@ table .checkbox input[type="checkbox"] {
 .front .region-header .menu.nav .btn-group + .btn,
 .front .region-header .menu.nav .btn-group + .btn-group {
   margin-left: -1px;
+}
+@media (min-width: 480px) {
+  .front .region-header .menu.nav {
+    width: 50%;
+  }
 }
 .front .region-header .menu.nav li {
   position: relative;

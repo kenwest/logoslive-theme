@@ -31,7 +31,7 @@
     padding: 0;
     margin: 0;
 
-    // Mobile:
+    // Mobile and tablet:
       font-size: @font-size-h2;
     @media (min-width: @screen-sm-min) {
       font-size: @font-size-h1;
@@ -39,7 +39,7 @@
   }
 
   .lead {
-    // Mobile:
+    // Mobile and tablet:
       font-size: @font-size-base;
     @media (min-width: @screen-sm-min) {
       font-size: floor(@font-size-base * 1.15);
@@ -83,7 +83,7 @@
 
     .logo {
 
-      // Mobile:
+      // Mobile and tablet:
         max-width: 30%;
       @media (min-width: @screen-sm-min) {
         width: 150px;
@@ -98,7 +98,7 @@
   .navbar-header-name {
     display: inline-block;
 
-    // Mobile:
+    // Mobile and tablet:
       max-width: 45%;
     @media (min-width: @screen-sm-min) {
       max-width: 80%;
@@ -113,17 +113,23 @@
 
     section {
       .container;
+
+      margin-top: (@grid-gutter-width / 2);
+      margin-bottom: (@grid-gutter-width / 2);
     }
 
     .menu.nav {
       .btn-group;
 
-      width: 50%;
+      // Mobile:
+        width: 100%;
+      @media (min-width: @screen-xs-min) {
+        width: 50%;
+      }
 
       li {
         .btn;
         .btn-default;
-
         width: 50%;
 
         a {
