@@ -6653,6 +6653,9 @@ table .checkbox input[type="checkbox"] {
   background: rgba(0, 0, 0, 0) url("/sites/default/files/images/melbourne/logoslive/logos-live-audience.jpg") repeat scroll 50% 50%;
   height: 500px;
 }
+.block-search {
+  margin: 0 10%;
+}
 h1,
 h2,
 h3,
