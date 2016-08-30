@@ -6566,6 +6566,9 @@ table .checkbox input[type="checkbox"] {
 .navbar.container > .container {
   width: 100%;
 }
+.navbar.container > .container .navbar-brand {
+  margin-left: 0;
+}
 .navbar-default {
   margin: 0;
   border: 0;
