@@ -6631,10 +6631,12 @@ table .checkbox input[type="checkbox"] {
 }
 .navbar-default .navbar-header .logo {
   max-width: 30%;
+  padding-left: 15px;
 }
 @media (min-width: 768px) {
   .navbar-default .navbar-header .logo {
     width: 150px;
+    padding-left: 15px;
   }
 }
 .navbar-default .navbar-header .logo img {
