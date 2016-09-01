@@ -6879,13 +6879,13 @@ h6 {
 .domain-logoslive-org div.jp-volume-bar,
 .domain-logoslive-org a.jp-mute,
 .domain-logoslive-org a.jp-unmute {
-  display: none;
+  visibility: hidden;
 }
 @media (min-width: 480px) {
   .domain-logoslive-org div.jp-volume-bar,
   .domain-logoslive-org a.jp-mute,
   .domain-logoslive-org a.jp-unmute {
-    display: initial;
+    display: visible;
   }
 }
 .domain-logoslive-org a.jp-play:before {
