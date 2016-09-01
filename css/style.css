@@ -6838,6 +6838,24 @@ h6 {
 .domain-logoslive-org div.jp-volume-bar {
   background: #cccccc;
 }
+.domain-logoslive-org div.jp-current-time,
+.domain-logoslive-org div.jp-duration {
+  font-size: 0.8em;
+}
+.domain-logoslive-org div.jp-playlist ul,
+.domain-logoslive-org div.jp-playlist div.jp-playlist-comment {
+  font-size: 0.9em;
+}
+.domain-logoslive-org div.jp-audio div.jp-type-playlist a.jp-play,
+.domain-logoslive-org div.jp-audio div.jp-type-playlist a.jp-pause {
+  left: 20px;
+}
+.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-progress,
+.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-current-time,
+.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-duration {
+  left: 76px;
+  width: 200px;
+}
 .domain-logoslive-org a.jp-next,
 .domain-logoslive-org a.jp-previous,
 .domain-logoslive-org a.jp-stop {
@@ -6863,7 +6881,7 @@ h6 {
 .domain-logoslive-org a.jp-pause,
 .domain-logoslive-org a.jp-mute,
 .domain-logoslive-org a.jp-unmute {
-  backgound: none;
+  background: none;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 0;

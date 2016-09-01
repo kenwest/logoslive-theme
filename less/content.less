@@ -93,6 +93,30 @@ h1, h2, h3, h4, h5, h6 {
     background: @gray-fplayer-background;
   }
 
+  div.jp-current-time,
+  div.jp-duration {
+    font-size: 0.8em;
+  }
+
+  div.jp-playlist ul,
+  div.jp-playlist div.jp-playlist-comment {
+    font-size: 0.9em;
+  }
+
+  div.jp-audio div.jp-type-playlist {
+    a.jp-play,
+    a.jp-pause {
+      left: 20px;
+    }
+
+    div.jp-progress,
+    div.jp-current-time,
+    div.jp-duration {
+      left: 76px;
+      width: 200px;
+    }
+  }
+
   a.jp-next,
   a.jp-previous,
   a.jp-stop {
@@ -123,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   a.jp-pause,
   a.jp-mute,
   a.jp-unmute {
-    backgound: none;
+    background: none;
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: 0;
