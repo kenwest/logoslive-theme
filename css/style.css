@@ -6834,11 +6834,11 @@ h6 {
 }
 .domain-logoslive-org div.jp-play-bar,
 .domain-logoslive-org div.jp-volume-bar-value {
-  background: #f80400;
+  background: #444444;
 }
 .domain-logoslive-org div.jp-seek-bar,
 .domain-logoslive-org div.jp-volume-bar {
-  background: #cccccc;
+  background: #c3c3c3;
 }
 .domain-logoslive-org div.jp-current-time,
 .domain-logoslive-org div.jp-duration {

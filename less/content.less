@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-size-fplayer-button-large: floor(@font-size-base * 3);
 @font-size-fplayer-button-small: @font-size-large;
-@gray-fplayer-background:        lighten(#000, 80%);
+@gray-fplayer-background:        lighten(@text-color, 50%);
 
 .domain-logoslive-org {
   div.jp-audio,
@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 
   div.jp-play-bar,
   div.jp-volume-bar-value {
-    background: @brand-primary;
+    background: @text-color;
   }
 
   div.jp-seek-bar,
