@@ -6776,6 +6776,20 @@ h6 {
 .page-node .tabs--primary.nav-tabs {
   display: none;
 }
+.views-field-field-is-audio {
+  display: none;
+}
+.views-field-field-speakers,
+.views-field-field-date-text {
+  display: inline-block;
+}
+.views-field-field-speakers,
+.views-field-field-date-text {
+  font-weight: bold;
+}
+.views-field-field-date-text {
+  text-align: right;
+}
 .footer {
   background-color: #444444;
   color: white;
