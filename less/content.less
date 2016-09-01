@@ -50,16 +50,47 @@ h1, h2, h3, h4, h5, h6 {
 @gray-fplayer-background:        lighten(@text-color, 50%);
 
 .domain-logoslive-org {
-  div.jp-audio,
-  div.jp-video {
+  div.jp-audio {
     color: @text-color;
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-  }
 
-  div.jp-audio div.jp-type-playlist div.jp-interface {
-    height: 80px;
+    // Mobile:
+      width: 100%;
+    @media (min-width: @screen-xs-min) {
+      width: @screen-xs-min;
+    }
+
+    div.jp-type-playlist {
+      div.jp-interface {
+        height: 80px;
+      }
+
+      div.jp-playlist {
+        a.jp-playlist-current {
+          color: @link-color;
+        }
+
+        a.jp-playlist-current:hover,
+        a.jp-playlist-current:focus {
+          color: @link-hover-color;
+          text-decoration: underline;
+        }
+      }
+
+      a.jp-play,
+      a.jp-pause {
+        left: 20px;
+      }
+
+      div.jp-progress,
+      div.jp-current-time,
+      div.jp-duration {
+        left: 76px;
+        width: 200px;
+      }
+    }
   }
 
   div.jp-interface {
@@ -105,36 +136,20 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9em;
   }
 
-  div.jp-audio div.jp-type-playlist {
-    div.jp-playlist {
-      a.jp-playlist-current {
-        color: @link-color;
-      }
-
-      a.jp-playlist-current:hover,
-      a.jp-playlist-current:focus {
-        color: @link-hover-color;
-        text-decoration: underline;
-      }
-    }
-
-    a.jp-play,
-    a.jp-pause {
-      left: 20px;
-    }
-
-    div.jp-progress,
-    div.jp-current-time,
-    div.jp-duration {
-      left: 76px;
-      width: 200px;
-    }
-  }
-
   a.jp-next,
   a.jp-previous,
   a.jp-stop {
     display: none;
+  }
+
+  div.jp-volume-bar,
+  a.jp-mute,
+  a.jp-unmute {
+    // Mobile:
+      display: none;
+    @media (min-width: @screen-xs-min) {
+      display: initial;
+    }
   }
 
   a.jp-play:before {

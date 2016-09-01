@@ -6805,15 +6805,38 @@ h6 {
 .views-field-body {
   clear: both;
 }
-.domain-logoslive-org div.jp-audio,
-.domain-logoslive-org div.jp-video {
+.domain-logoslive-org div.jp-audio {
   color: #444444;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .domain-logoslive-org div.jp-audio {
+    width: 480px;
+  }
 }
 .domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-interface {
   height: 80px;
+}
+.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
+  color: #f80400;
+}
+.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-playlist a.jp-playlist-current:hover,
+.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-playlist a.jp-playlist-current:focus {
+  color: #ac0300;
+  text-decoration: underline;
+}
+.domain-logoslive-org div.jp-audio div.jp-type-playlist a.jp-play,
+.domain-logoslive-org div.jp-audio div.jp-type-playlist a.jp-pause {
+  left: 20px;
+}
+.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-progress,
+.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-current-time,
+.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-duration {
+  left: 76px;
+  width: 200px;
 }
 .domain-logoslive-org div.jp-interface {
   background-color: inherit;
@@ -6848,28 +6871,22 @@ h6 {
 .domain-logoslive-org div.jp-playlist div.jp-playlist-comment {
   font-size: 0.9em;
 }
-.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
-  color: #f80400;
-}
-.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-playlist a.jp-playlist-current:hover,
-.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-playlist a.jp-playlist-current:focus {
-  color: #ac0300;
-  text-decoration: underline;
-}
-.domain-logoslive-org div.jp-audio div.jp-type-playlist a.jp-play,
-.domain-logoslive-org div.jp-audio div.jp-type-playlist a.jp-pause {
-  left: 20px;
-}
-.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-progress,
-.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-current-time,
-.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-duration {
-  left: 76px;
-  width: 200px;
-}
 .domain-logoslive-org a.jp-next,
 .domain-logoslive-org a.jp-previous,
 .domain-logoslive-org a.jp-stop {
   display: none;
+}
+.domain-logoslive-org div.jp-volume-bar,
+.domain-logoslive-org a.jp-mute,
+.domain-logoslive-org a.jp-unmute {
+  display: none;
+}
+@media (min-width: 480px) {
+  .domain-logoslive-org div.jp-volume-bar,
+  .domain-logoslive-org a.jp-mute,
+  .domain-logoslive-org a.jp-unmute {
+    display: initial;
+  }
 }
 .domain-logoslive-org a.jp-play:before {
   content: "\f01d";
