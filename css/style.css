@@ -6820,10 +6820,12 @@ h6 {
   border: 0;
 }
 .domain-logoslive-org div.jp-interface ul.jp-controls a {
+  color: #444444;
   text-indent: 0;
 }
 .domain-logoslive-org div.jp-interface ul.jp-controls a:hover,
 .domain-logoslive-org div.jp-interface ul.jp-controls a:focus {
+  color: #f80400;
   text-decoration: none;
 }
 .domain-logoslive-org div.jp-playlist {
