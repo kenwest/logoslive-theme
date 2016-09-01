@@ -6782,7 +6782,8 @@ h6 {
 .views-field-field-speakers,
 .views-field-field-date-text,
 .views-field-body,
-.views-field-nid {
+.views-field-nid,
+.field-content {
   display: inline-block;
 }
 .views-field-field-speakers,
