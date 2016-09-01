@@ -6819,6 +6819,9 @@ h6 {
   background-color: inherit;
   border: 0;
 }
+.domain-logoslive-org div.jp-interface ul.jp-controls a {
+  text-indent: 0;
+}
 .domain-logoslive-org div.jp-playlist {
   background-color: inherit;
   border-width: 0;
@@ -6826,9 +6829,6 @@ h6 {
 .domain-logoslive-org div.jp-play-bar,
 .domain-logoslive-org div.jp-volume-bar-value {
   background: #f80400;
-}
-.domain-logoslive-org a {
-  text-indent: 0;
 }
 .domain-logoslive-org a.jp-next,
 .domain-logoslive-org a.jp-previous,
