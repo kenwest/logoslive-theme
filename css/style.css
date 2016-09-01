@@ -6781,14 +6781,10 @@ h6 {
 }
 .views-field-field-speakers,
 .views-field-field-date-text {
-  display: inline-block;
-}
-.views-field-field-speakers,
-.views-field-field-date-text {
   font-weight: bold;
 }
 .views-field-field-date-text {
-  text-align: right;
+  float: right;
 }
 .footer {
   background-color: #444444;
