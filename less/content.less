@@ -45,6 +45,9 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
+@font-size-fplayer-button-large: floor(@font-size-base * 3);
+@font-size-fplayer-button-small: floor(@font-size-base * 1.5);
+
 .domain-logoslive-org {
   div.jp-audio,
   div.jp-video {
@@ -73,6 +76,10 @@ h1, h2, h3, h4, h5, h6 {
     background: @brand-primary;
   }
 
+  a {
+    text-indent: 0;
+  }
+
   a.jp-next,
   a.jp-previous,
   a.jp-stop {
@@ -81,17 +88,31 @@ h1, h2, h3, h4, h5, h6 {
 
   a.jp-play:before {
     content: "\f01d";
+    font-size: @font-size-fplayer-button-large;
   }
 
   a.jp-pause:before {
     content: "\f28c";
+    font-size: @font-size-fplayer-button-large;
+  }
+
+  a.jp-mute:before {
+    content: "\f026";
+    font-size: @font-size-fplayer-button-small;
+  }
+
+  a.jp-mute:before {
+    content: "\f028";
+    font-size: @font-size-fplayer-button-small;
   }
 
   a.jp-play,
-  a.jp-pause {
+  a.jp-pause,
+  a.jp-mute,
+  a.jp-unmute {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
+    font-size: 0;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

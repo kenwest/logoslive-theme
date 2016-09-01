@@ -6827,6 +6827,9 @@ h6 {
 .domain-logoslive-org div.jp-volume-bar-value {
   background: #f80400;
 }
+.domain-logoslive-org a {
+  text-indent: 0;
+}
 .domain-logoslive-org a.jp-next,
 .domain-logoslive-org a.jp-previous,
 .domain-logoslive-org a.jp-stop {
@@ -6834,15 +6837,27 @@ h6 {
 }
 .domain-logoslive-org a.jp-play:before {
   content: "\f01d";
+  font-size: 42px;
 }
 .domain-logoslive-org a.jp-pause:before {
   content: "\f28c";
+  font-size: 42px;
+}
+.domain-logoslive-org a.jp-mute:before {
+  content: "\f026";
+  font-size: 21px;
+}
+.domain-logoslive-org a.jp-mute:before {
+  content: "\f028";
+  font-size: 21px;
 }
 .domain-logoslive-org a.jp-play,
-.domain-logoslive-org a.jp-pause {
+.domain-logoslive-org a.jp-pause,
+.domain-logoslive-org a.jp-mute,
+.domain-logoslive-org a.jp-unmute {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 0;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
