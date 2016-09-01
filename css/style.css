@@ -6822,6 +6822,10 @@ h6 {
 .domain-logoslive-org div.jp-interface ul.jp-controls a {
   text-indent: 0;
 }
+.domain-logoslive-org div.jp-interface ul.jp-controls a:hover,
+.domain-logoslive-org div.jp-interface ul.jp-controls a:focus {
+  text-decoration: none;
+}
 .domain-logoslive-org div.jp-playlist {
   background-color: inherit;
   border-width: 0;
@@ -6829,6 +6833,10 @@ h6 {
 .domain-logoslive-org div.jp-play-bar,
 .domain-logoslive-org div.jp-volume-bar-value {
   background: #f80400;
+}
+.domain-logoslive-org div.jp-seek-bar,
+.domain-logoslive-org div.jp-volume-bar {
+  background: #cccccc;
 }
 .domain-logoslive-org a.jp-next,
 .domain-logoslive-org a.jp-previous,
@@ -6845,22 +6853,27 @@ h6 {
 }
 .domain-logoslive-org a.jp-mute:before {
   content: "\f026";
-  font-size: 21px;
+  font-size: 18px;
 }
-.domain-logoslive-org a.jp-mute:before {
+.domain-logoslive-org a.jp-unmute:before {
   content: "\f028";
-  font-size: 21px;
+  font-size: 18px;
 }
 .domain-logoslive-org a.jp-play,
 .domain-logoslive-org a.jp-pause,
 .domain-logoslive-org a.jp-mute,
 .domain-logoslive-org a.jp-unmute {
+  backgound: none;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 0;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.domain-logoslive-org a.jp-mute,
+.domain-logoslive-org a.jp-unmute {
+  height: 18px;
 }
 .footer {
   background-color: #444444;
