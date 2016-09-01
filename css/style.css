@@ -6787,6 +6787,10 @@ h6 {
 .views-field-nid {
   display: inline;
 }
+.views-field-body .field-content,
+.views-field-nid .field-content {
+  display: inline;
+}
 .views-field-field-speakers,
 .views-field-field-date-text {
   max-width: 49%;
