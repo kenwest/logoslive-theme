@@ -6780,11 +6780,12 @@ h6 {
   display: none;
 }
 .views-field-field-speakers,
-.views-field-field-date-text,
-.views-field-body,
-.views-field-nid,
-.field-content {
+.views-field-field-date-text {
   display: inline-block;
+}
+.views-field-body,
+.views-field-nid {
+  display: inline;
 }
 .views-field-field-speakers,
 .views-field-field-date-text {
