@@ -78,4 +78,22 @@ h1, h2, h3, h4, h5, h6 {
   a.jp-stop {
     display: none;
   }
+
+  a.jp-play:before {
+    content: "\f01d";
+  }
+
+  a.jp-pause:before {
+    content: "\f28c";
+  }
+
+  a.jp-play,
+  a.jp-pause {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }

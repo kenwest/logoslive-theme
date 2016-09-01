@@ -6832,6 +6832,21 @@ h6 {
 .domain-logoslive-org a.jp-stop {
   display: none;
 }
+.domain-logoslive-org a.jp-play:before {
+  content: "\f01d";
+}
+.domain-logoslive-org a.jp-pause:before {
+  content: "\f28c";
+}
+.domain-logoslive-org a.jp-play,
+.domain-logoslive-org a.jp-pause {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .footer {
   background-color: #444444;
   color: white;
