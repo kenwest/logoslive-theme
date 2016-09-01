@@ -6779,9 +6779,8 @@ h6 {
 .views-field-field-is-audio {
   display: none;
 }
-.views-field-field-speakers,
-.views-field-field-date-text {
-  display: inline-block;
+.views-field-field-speakers {
+  float: left;
 }
 .views-field-body,
 .views-field-nid {
@@ -6801,6 +6800,7 @@ h6 {
 }
 .views-field-field-date-text {
   float: right;
+  text-align: right;
 }
 .views-field-body {
   clear: both;
@@ -6826,6 +6826,11 @@ h6 {
 .domain-logoslive-org div.jp-play-bar,
 .domain-logoslive-org div.jp-volume-bar-value {
   background: #f80400;
+}
+.domain-logoslive-org a.jp-next,
+.domain-logoslive-org a.jp-previous,
+.domain-logoslive-org a.jp-stop {
+  display: none;
 }
 .footer {
   background-color: #444444;

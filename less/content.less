@@ -13,9 +13,8 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-.views-field-field-speakers,
-.views-field-field-date-text {
-  display: inline-block;
+.views-field-field-speakers {
+  float: left;
 }
 
 .views-field-body,
@@ -39,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .views-field-field-date-text {
   float: right;
+  text-align: right;
 }
 
 .views-field-body {
@@ -71,5 +71,11 @@ h1, h2, h3, h4, h5, h6 {
   div.jp-play-bar,
   div.jp-volume-bar-value {
     background: @brand-primary;
+  }
+
+  a.jp-next,
+  a.jp-previous,
+  a.jp-stop {
+    display: none;
   }
 }
