@@ -6848,6 +6848,14 @@ h6 {
 .domain-logoslive-org div.jp-playlist div.jp-playlist-comment {
   font-size: 0.9em;
 }
+.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
+  color: #f80400;
+}
+.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-playlist a.jp-playlist-current:hover,
+.domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-playlist a.jp-playlist-current:focus {
+  color: #ac0300;
+  text-decoration: underline;
+}
 .domain-logoslive-org div.jp-audio div.jp-type-playlist a.jp-play,
 .domain-logoslive-org div.jp-audio div.jp-type-playlist a.jp-pause {
   left: 20px;

@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
       a:hover,
       a:focus {
-        color: @brand-primary;
+        color: @link-color;
         text-decoration: none;
       }
     }
@@ -106,6 +106,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   div.jp-audio div.jp-type-playlist {
+    div.jp-playlist {
+      a.jp-playlist-current {
+        color: @link-color;
+      }
+
+      a.jp-playlist-current:hover,
+      a.jp-playlist-current:focus {
+        color: @link-hover-color;
+        text-decoration: underline;
+      }
+    }
+
     a.jp-play,
     a.jp-pause {
       left: 20px;
