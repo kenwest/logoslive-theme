@@ -6885,7 +6885,7 @@ h6 {
   .domain-logoslive-org div.jp-volume-bar,
   .domain-logoslive-org a.jp-mute,
   .domain-logoslive-org a.jp-unmute {
-    display: visible;
+    visibility: visible;
   }
 }
 .domain-logoslive-org a.jp-play:before {
