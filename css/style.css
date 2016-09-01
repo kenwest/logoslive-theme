@@ -6823,6 +6823,10 @@ h6 {
   background-color: inherit;
   border-width: 0;
 }
+.domain-logoslive-org div.jp-play-bar,
+.domain-logoslive-org div.jp-volume-bar-value {
+  background: #f80400;
+}
 .footer {
   background-color: #444444;
   color: white;
