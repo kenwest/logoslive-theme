@@ -6780,8 +6780,14 @@ h6 {
   display: none;
 }
 .views-field-field-speakers,
-.views-field-field-date-text {
+.views-field-field-date-text,
+.views-field-body,
+.views-field-nid {
   display: inline-block;
+}
+.views-field-field-speakers,
+.views-field-field-date-text {
+  max-width: 49%;
 }
 .views-field-field-speakers,
 .views-field-field-date-text {
@@ -6789,6 +6795,9 @@ h6 {
 }
 .views-field-field-date-text {
   float: right;
+}
+.views-field-body {
+  clear: both;
 }
 .footer {
   background-color: #444444;
