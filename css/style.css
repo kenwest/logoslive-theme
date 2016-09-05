@@ -6784,6 +6784,9 @@ h6 {
 .views {
   max-width: 720px;
 }
+.views-row + .views-row {
+  padding-top: 30px;
+}
 .views-field-field-in-activity,
 .views-field-field-is-audio {
   display: none;
