@@ -113,14 +113,10 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
 
-    .field-name-field-episode-date {
-      padding-bottom: floor(@grid-gutter-width/2);
-    }
-
     .field-name-field-topic,
     .field-name-field-topics {
       .field-label {
-        visibility: hidden;
+        display: none;
       }
 
       .field-item {
@@ -133,7 +129,10 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
 
+    .field-name-field-episode-date,
+    .field-name-field-topics,
     .field-name-body,
+    .field-name-content,
     .field-name-field-addthis {
       padding-bottom: @grid-gutter-width;
     }

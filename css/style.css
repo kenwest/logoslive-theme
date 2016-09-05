@@ -6854,12 +6854,9 @@ h6 {
 .block-system .node .field-name-field-episode-date .field-label {
   width: 140px;
 }
-.block-system .node .field-name-field-episode-date {
-  padding-bottom: 15px;
-}
 .block-system .node .field-name-field-topic .field-label,
 .block-system .node .field-name-field-topics .field-label {
-  visibility: hidden;
+  display: none;
 }
 .block-system .node .field-name-field-topic .field-item,
 .block-system .node .field-name-field-topics .field-item {
@@ -6889,7 +6886,10 @@ h6 {
   position: relative;
   top: -1px;
 }
+.block-system .node .field-name-field-episode-date,
+.block-system .node .field-name-field-topics,
 .block-system .node .field-name-body,
+.block-system .node .field-name-content,
 .block-system .node .field-name-field-addthis {
   padding-bottom: 30px;
 }
