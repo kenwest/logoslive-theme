@@ -6628,6 +6628,7 @@ table .checkbox input[type="checkbox"] {
 }
 .navbar-default .navbar-header {
   margin: 0;
+  padding-bottom: 30px;
 }
 .navbar-default .navbar-header .logo {
   max-width: 35%;
@@ -6637,6 +6638,7 @@ table .checkbox input[type="checkbox"] {
   .navbar-default .navbar-header .logo {
     width: 150px;
     padding-left: 15px;
+    padding-right: 30px;
   }
 }
 .navbar-default .navbar-header .logo img {
@@ -6776,6 +6778,12 @@ h6 {
 .page-node .tabs--primary.nav-tabs {
   display: none;
 }
+.main-container {
+  padding-top: 30px;
+}
+.views {
+  max-width: 720px;
+}
 .views-field-field-in-activity,
 .views-field-field-is-audio {
   display: none;
@@ -6832,6 +6840,9 @@ h6 {
 /*
  * Node formatting
  */
+.block-system .node {
+  max-width: 720px;
+}
 .block-system .node .field-name-field-in-activity,
 .block-system .node .blog_usernames_blog {
   display: none;
