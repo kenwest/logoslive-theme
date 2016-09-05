@@ -6847,6 +6847,48 @@ h6 {
   max-width: 100%;
   height: auto;
 }
+.block-system .node .field-name-field-topic .field-label,
+.block-system .node .field-name-field-topics .field-label,
+.block-system .node .field-name-field-speakers .field-label,
+.block-system .node .field-name-field-bible-reference .field-label,
+.block-system .node .field-name-field-episode-date .field-label {
+  width: 140px;
+}
+.block-system .node .field-name-field-episode-date {
+  padding-bottom: 15px;
+}
+.block-system .node .field-name-field-topic .field-label,
+.block-system .node .field-name-field-topics .field-label {
+  visibility: hidden;
+}
+.block-system .node .field-name-field-topic .field-item,
+.block-system .node .field-name-field-topics .field-item {
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #999999;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 5px;
+  margin: 0 5px 5px 0;
+  background: #444444;
+  color: white;
+}
+.block-system .node .field-name-field-topic .field-item:empty,
+.block-system .node .field-name-field-topics .field-item:empty {
+  display: none;
+}
+.btn .block-system .node .field-name-field-topic .field-item,
+.btn .block-system .node .field-name-field-topics .field-item {
+  position: relative;
+  top: -1px;
+}
 .block-system .node .field-name-body,
 .block-system .node .field-name-field-addthis {
   padding-bottom: 30px;

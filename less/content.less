@@ -103,6 +103,36 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
 
+    .field-name-field-topic,
+    .field-name-field-topics,
+    .field-name-field-speakers,
+    .field-name-field-bible-reference,
+    .field-name-field-episode-date {
+      .field-label {
+        width: 140px;
+      }
+    }
+
+    .field-name-field-episode-date {
+      padding-bottom: floor(@grid-gutter-width/2);
+    }
+
+    .field-name-field-topic,
+    .field-name-field-topics {
+      .field-label {
+        visibility: hidden;
+      }
+
+      .field-item {
+        .badge;
+        display: inline-block;
+        padding: 5px;
+        margin: 0 5px 5px 0;
+        background: @text-color;
+        color: white;
+      }
+    }
+
     .field-name-body,
     .field-name-field-addthis {
       padding-bottom: @grid-gutter-width;
