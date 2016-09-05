@@ -6764,7 +6764,9 @@ table .checkbox input[type="checkbox"] {
 }
 @media (min-width: 480px) {
   .front .region-header .content-search {
-    width: 50%;
+    float: right;
+    width: 320px;
+    margin: 10px;
   }
 }
 h1,
