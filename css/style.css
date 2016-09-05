@@ -6767,11 +6767,11 @@ table .checkbox input[type="checkbox"] {
     width: 50%;
   }
 }
-.not-front .region-header .content-search {
+.not-front .region-header form#search-block-form {
   width: 100%;
 }
 @media (min-width: 480px) {
-  .not-front .region-header .content-search {
+  .not-front .region-header form#search-block-form {
     float: right;
     width: 320px;
     margin: 10px;
