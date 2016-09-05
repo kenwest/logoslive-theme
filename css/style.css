@@ -6848,8 +6848,7 @@ h6 {
   height: auto;
 }
 .block-system .node .field-name-body,
-.block-system .node .field-name-field-addthis,
-.block-system .node .comment-add {
+.block-system .node .field-name-field-addthis {
   padding-bottom: 30px;
 }
 .block-system .node .comment-add {
@@ -6866,6 +6865,7 @@ h6 {
   background-color: #999999;
   border-radius: 10px;
   padding: 15px;
+  margin-bottom: 30px;
   border-radius: 30px;
   background: #f80400;
 }
