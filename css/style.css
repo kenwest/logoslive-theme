@@ -6634,7 +6634,7 @@ table .checkbox input[type="checkbox"] {
   max-width: 35%;
   padding-left: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .navbar-default .navbar-header .logo {
     width: 180px;
     padding-left: 15px;
