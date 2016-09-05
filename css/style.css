@@ -6776,6 +6776,7 @@ h6 {
 .page-node .tabs--primary.nav-tabs {
   display: none;
 }
+.views-field-field-in-activity,
 .views-field-field-is-audio {
   display: none;
 }
@@ -6805,6 +6806,17 @@ h6 {
 .views-field-body {
   clear: both;
 }
+.view-national-blog .views-field-field-speakers,
+.region-sidebar-second .views-field-field-speakers,
+.view-national-blog .views-field-field-date-text,
+.region-sidebar-second .views-field-field-date-text {
+  float: none;
+  text-align: inherit;
+  width: auto;
+}
+/*
+ * jPlayer configuration
+ */
 .domain-logoslive-org div.jp-audio {
   color: #444444;
   font-family: inherit;
