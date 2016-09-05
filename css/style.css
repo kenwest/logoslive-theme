@@ -6843,6 +6843,7 @@ h6 {
 }
 .block-system .node .field-name-field-image img {
   max-width: 100%;
+  height: auto;
 }
 /*
  * jPlayer configuration
