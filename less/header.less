@@ -165,7 +165,19 @@
       }
     }
     
-    form#search-block-form {
+    .content-search {
+      // Mobile:
+        width: 100%;
+      @media (min-width: @screen-xs-min) {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.not-front {
+  region-header {
+    .content-search {
       // Mobile:
         width: 100%;
       @media (min-width: @screen-xs-min) {
