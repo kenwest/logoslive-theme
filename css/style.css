@@ -6759,11 +6759,11 @@ table .checkbox input[type="checkbox"] {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
-.front .region-header .content-search {
+.front .region-header form#search-block-form {
   width: 100%;
 }
 @media (min-width: 480px) {
-  .front .region-header .content-search {
+  .front .region-header form#search-block-form {
     float: right;
     width: 320px;
     margin: 10px;
