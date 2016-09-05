@@ -80,6 +80,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*
+ * Node formatting
+ */
+
+.block-system {
+  .node {
+    .field-name-field-in-activity {
+      display: none;
+    }
+
+    .field-name-field-image {
+      float: right;
+      max-width: 50%;
+      margin-left: floor(@grid-gutter-width);
+      padding-left: floor(@grid-gutter-width);
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+/*
  * jPlayer configuration
  */
 
