@@ -6832,7 +6832,8 @@ h6 {
 /*
  * Node formatting
  */
-.block-system .node .field-name-field-in-activity {
+.block-system .node .field-name-field-in-activity,
+.block-system .node .blog_usernames_blog {
   display: none;
 }
 .block-system .node .field-name-field-image {
@@ -6845,6 +6846,42 @@ h6 {
 .block-system .node .field-name-field-image img {
   max-width: 100%;
   height: auto;
+}
+.block-system .node .field-name-body,
+.block-system .node .field-name-field-addthis,
+.block-system .node .comment-add {
+  padding-bottom: 30px;
+}
+.block-system .node .comment-add {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #999999;
+  border-radius: 10px;
+  padding: 15px;
+  border-radius: 30px;
+  background: #f80400;
+}
+.block-system .node .comment-add:empty {
+  display: none;
+}
+.btn .block-system .node .comment-add {
+  position: relative;
+  top: -1px;
+}
+.block-system .node .comment-add a,
+.block-system .node .comment-add a:hover,
+.block-system .node .comment-add a:focus {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
 }
 /*
  * jPlayer configuration

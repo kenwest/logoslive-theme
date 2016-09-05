@@ -85,7 +85,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .block-system {
   .node {
-    .field-name-field-in-activity {
+    .field-name-field-in-activity,
+    .blog_usernames_blog {
       display: none;
     }
 
@@ -99,6 +100,27 @@ h1, h2, h3, h4, h5, h6 {
       img {
         max-width: 100%;
         height: auto;
+      }
+    }
+
+    .field-name-body,
+    .field-name-field-addthis,
+    .comment-add {
+      padding-bottom: @grid-gutter-width;
+    }
+
+    .comment-add {
+      .badge;
+      padding: floor(@grid-gutter-width/2);
+      border-radius: @grid-gutter-width;
+      background: @brand-primary;
+
+      a,
+      a:hover,
+      a:focus {
+        font-size: @font-size-large;
+        font-weight: bold;
+        color: white;
       }
     }
   }
