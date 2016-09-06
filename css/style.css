@@ -6989,6 +6989,11 @@ h6 {
   position: relative;
   top: -1px;
 }
+.block-system .node .field-name-field-date-text {
+  font-weight: bold;
+  font-size: 18px;
+}
+.block-system .node .field-name-field-date-text,
 .block-system .node .field-name-field-episode-date,
 .block-system .node .field-name-field-topics,
 .block-system .node .field-name-body,
@@ -7034,6 +7039,17 @@ h6 {
   font-size: 18px;
   font-weight: bold;
   color: white;
+}
+.block-system .node .comment-add .dropdown a,
+.block-system .node .field-name-field-add-to-calendar .field-item .dropdown a,
+.block-system .node .comment-add .dropdown a:hover,
+.block-system .node .field-name-field-add-to-calendar .field-item .dropdown a:hover,
+.block-system .node .comment-add .dropdown a:focus,
+.block-system .node .field-name-field-add-to-calendar .field-item .dropdown a:focus {
+  padding: 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #f80400;
 }
 /*
  * jPlayer configuration
