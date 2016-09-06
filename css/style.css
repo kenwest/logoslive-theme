@@ -6787,9 +6787,11 @@ table .checkbox input[type="checkbox"] {
 }
 .logos-live-links .feeds {
   list-style: none;
+  padding: 15px;
 }
 .logos-live-links .stations {
   list-style: none;
+  padding: 15px;
 }
 .logos-live-links .itunes,
 .logos-live-links .rss {
