@@ -6783,12 +6783,14 @@ table .checkbox input[type="checkbox"] {
   color: white;
   border-color: #cccccc;
   list-style: none;
+  white-space: inherit;
 }
 .logos-live-links .broadcasts {
   background: white;
   color: #444444;
   border-color: #cccccc;
   list-style: none;
+  white-space: inherit;
 }
 .logos-live-links .feeds {
   list-style: none;
@@ -6819,6 +6821,7 @@ table .checkbox input[type="checkbox"] {
 .logos-live-links .lightdigital img,
 .logos-live-links .lifefm img {
   max-width: 200px;
+  width: 100%;
   height: auto;
 }
 h1,
