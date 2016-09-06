@@ -6925,6 +6925,14 @@ h6 {
 .view-national-library .more-link {
   display: none;
 }
+.page-header,
+.block-title {
+  display: flex;
+}
+.page-header i,
+.block-title i {
+  width: 60px;
+}
 /*
  * Node formatting
  */
