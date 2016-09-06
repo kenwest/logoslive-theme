@@ -7140,8 +7140,13 @@ h6 {
 }
 .logos-live-cbf-attribution {
   margin-top: -30px;
-  float: right;
-  max-width: 50%;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .logos-live-cbf-attribution {
+    width: 50%;
+    float: right;
+  }
 }
 .logos-live-cbf-attribution img {
   display: block;
