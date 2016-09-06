@@ -7041,8 +7041,8 @@ h6 {
   font-weight: bold;
   color: white;
 }
-.block-system .node .comment-add .dropdown-menu a,
-.block-system .node .field-name-field-add-to-calendar .field-item .dropdown-menu a {
+.block-system .node .comment-add .dropdown a,
+.block-system .node .field-name-field-add-to-calendar .field-item .dropdown a {
   padding: 0;
 }
 .block-system .node .comment-add .dropdown-menu a,
