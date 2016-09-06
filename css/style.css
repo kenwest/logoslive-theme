@@ -6796,19 +6796,16 @@ table .checkbox input[type="checkbox"] {
   font-size: 36px;
 }
 .logos-live-links .itunes a,
-.logos-live-links .rss a,
 .logos-live-links .itunes a:hover,
-.logos-live-links .rss a:hover,
-.logos-live-links .itunes a:focus,
-.logos-live-links .rss a:focus {
-  color: white;
+.logos-live-links .itunes a:focus {
+  color: #666666;
   text-decoration: none;
 }
-.logos-live-links .itunes {
-  color: #666666;
-}
-.logos-live-links .rss {
+.logos-live-links .rss a,
+.logos-live-links .rss a:hover,
+.logos-live-links .rss a:focus {
   color: #e65c24;
+  text-decoration: none;
 }
 h1,
 h2,
