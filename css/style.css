@@ -7051,6 +7051,7 @@ h6 {
 .block-system .node .field-name-field-add-to-calendar .field-item .dropdown-menu a:hover,
 .block-system .node .comment-add .dropdown-menu a:focus,
 .block-system .node .field-name-field-add-to-calendar .field-item .dropdown-menu a:focus {
+  padding: 7px;
   text-align: left;
   font-size: 14px;
   font-weight: normal;
