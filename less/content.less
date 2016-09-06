@@ -118,7 +118,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .field-name-field-image,
-    .field-name-field-series-image {
+    .field-name-field-series-image,
+    .field-name-field-add-to-calendar {
       float: right;
       max-width: 50%;
       margin-left: floor(@grid-gutter-width/4);
@@ -165,8 +166,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .comment-add,
-    .field-name-field-add-to-calendar {
+    .field-name-field-add-to-calendar .field-item {
       .badge;
+      width: 280px;
       padding: floor(@grid-gutter-width/2);
       margin-bottom: @grid-gutter-width;
       border-radius: @grid-gutter-width;

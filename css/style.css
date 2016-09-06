@@ -6934,7 +6934,8 @@ h6 {
   display: none;
 }
 .block-system .node .field-name-field-image,
-.block-system .node .field-name-field-series-image {
+.block-system .node .field-name-field-series-image,
+.block-system .node .field-name-field-add-to-calendar {
   float: right;
   max-width: 50%;
   margin-left: 7px;
@@ -6942,7 +6943,8 @@ h6 {
   padding-bottom: 15px;
 }
 .block-system .node .field-name-field-image img,
-.block-system .node .field-name-field-series-image img {
+.block-system .node .field-name-field-series-image img,
+.block-system .node .field-name-field-add-to-calendar img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -6994,7 +6996,7 @@ h6 {
   padding-bottom: 30px;
 }
 .block-system .node .comment-add,
-.block-system .node .field-name-field-add-to-calendar {
+.block-system .node .field-name-field-add-to-calendar .field-item {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
@@ -7007,26 +7009,27 @@ h6 {
   text-align: center;
   background-color: #999999;
   border-radius: 10px;
+  width: 280px;
   padding: 15px;
   margin-bottom: 30px;
   border-radius: 30px;
   background: #f80400;
 }
 .block-system .node .comment-add:empty,
-.block-system .node .field-name-field-add-to-calendar:empty {
+.block-system .node .field-name-field-add-to-calendar .field-item:empty {
   display: none;
 }
 .btn .block-system .node .comment-add,
-.btn .block-system .node .field-name-field-add-to-calendar {
+.btn .block-system .node .field-name-field-add-to-calendar .field-item {
   position: relative;
   top: -1px;
 }
 .block-system .node .comment-add a,
-.block-system .node .field-name-field-add-to-calendar a,
+.block-system .node .field-name-field-add-to-calendar .field-item a,
 .block-system .node .comment-add a:hover,
-.block-system .node .field-name-field-add-to-calendar a:hover,
+.block-system .node .field-name-field-add-to-calendar .field-item a:hover,
 .block-system .node .comment-add a:focus,
-.block-system .node .field-name-field-add-to-calendar a:focus {
+.block-system .node .field-name-field-add-to-calendar .field-item a:focus {
   font-size: 18px;
   font-weight: bold;
   color: white;
