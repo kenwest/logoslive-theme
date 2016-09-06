@@ -7037,9 +7037,19 @@ h6 {
 .block-system .node .field-name-field-add-to-calendar .field-item a:hover,
 .block-system .node .comment-add a:focus,
 .block-system .node .field-name-field-add-to-calendar .field-item a:focus {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   color: white;
+}
+@media (min-width: 480px) {
+  .block-system .node .comment-add a,
+  .block-system .node .field-name-field-add-to-calendar .field-item a,
+  .block-system .node .comment-add a:hover,
+  .block-system .node .field-name-field-add-to-calendar .field-item a:hover,
+  .block-system .node .comment-add a:focus,
+  .block-system .node .field-name-field-add-to-calendar .field-item a:focus {
+    font-size: 18px;
+  }
 }
 .block-system .node .comment-add .dropdown a,
 .block-system .node .field-name-field-add-to-calendar .field-item .dropdown a {
