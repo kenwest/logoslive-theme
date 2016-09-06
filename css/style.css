@@ -6828,7 +6828,8 @@ table .checkbox input[type="checkbox"] {
 .logos-live-links .stitcher img,
 .logos-live-links .lightdigital img,
 .logos-live-links .lifefm img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
   height: auto;
 }
 .logos-live-links .stitcher img,
@@ -6929,6 +6930,7 @@ h6 {
   padding-bottom: 15px;
 }
 .block-system .node .field-name-field-image img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -7135,4 +7137,13 @@ h6 {
 }
 .footer a {
   color: white;
+}
+.logos-live-cbf-attribution {
+  float: right;
+  max-width: 50%;
+}
+.logos-live-cbf-attribution img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
