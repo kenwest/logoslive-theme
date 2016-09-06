@@ -6918,7 +6918,8 @@ h6 {
 /*
  * Node formatting
  */
-.block-system .node {
+.block-system .node,
+.block-system .view {
   max-width: 720px;
 }
 .block-system .node .field-name-field-in-activity,
