@@ -6780,9 +6780,13 @@ table .checkbox input[type="checkbox"] {
 .logos-live-links .podcasts {
   background: #444444;
   color: white;
+  border-color: #cccccc;
   list-style: none;
 }
 .logos-live-links .broadcasts {
+  background: white;
+  color: #444444;
+  border-color: #cccccc;
   list-style: none;
 }
 .logos-live-links .feeds {
