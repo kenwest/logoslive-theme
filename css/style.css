@@ -6781,14 +6781,14 @@ table .checkbox input[type="checkbox"] {
   margin-bottom: 30px;
   background: #444444;
   color: white;
-  border-color: #cccccc;
+  border-color: #888888;
   list-style: none;
   white-space: inherit;
 }
 .logos-live-links .broadcasts {
   background: white;
   color: #444444;
-  border-color: #888888;
+  border-color: #cccccc;
   list-style: none;
   white-space: inherit;
 }
