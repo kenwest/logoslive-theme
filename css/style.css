@@ -6889,6 +6889,9 @@ h6 {
 .views-field-body {
   clear: both;
 }
+.not-front .region-content .views-field-body {
+  display: block;
+}
 .view-national-blog .views-field-field-speakers,
 .region-sidebar-second .views-field-field-speakers,
 .view-national-blog .views-field-field-date-text,
