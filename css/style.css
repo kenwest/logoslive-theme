@@ -6828,9 +6828,15 @@ table .checkbox input[type="checkbox"] {
 .logos-live-links .stitcher img,
 .logos-live-links .lightdigital img,
 .logos-live-links .lifefm img {
-  max-width: 200px;
   width: 100%;
   height: auto;
+}
+.logos-live-links .stitcher img,
+.logos-live-links .lightdigital img {
+  max-width: 200px;
+}
+.logos-live-links .lifefm img {
+  max-width: 120px;
 }
 h1,
 h2,
