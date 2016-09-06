@@ -6795,12 +6795,13 @@ table .checkbox input[type="checkbox"] {
 }
 .logos-live-links .itunes,
 .logos-live-links .rss {
-  font-size: 36px;
+  font-size: 32px;
+  display: inline-block;
 }
 .logos-live-links .itunes a,
 .logos-live-links .itunes a:hover,
 .logos-live-links .itunes a:focus {
-  color: #666666;
+  color: #aaaaaa;
   text-decoration: none;
 }
 .logos-live-links .rss a,
@@ -6808,6 +6809,10 @@ table .checkbox input[type="checkbox"] {
 .logos-live-links .rss a:focus {
   color: #e65c24;
   text-decoration: none;
+}
+.logos-live-links .lightdigital,
+.logos-live-links .lifefm {
+  max-width: 200px;
 }
 h1,
 h2,
