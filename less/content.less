@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .view-national-blog,
+.view-activity-to-event,
 .region-sidebar-second {
   .views-field-field-speakers,
   .views-field-field-date-text {
@@ -76,7 +77,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.view-national-blog {
+.view-national-blog,
+.view-activity-to-event {
   .views-field-field-thumbnail-image {
     float: left;
   }
@@ -115,7 +117,8 @@ h1, h2, h3, h4, h5, h6 {
       display: none;
     }
 
-    .field-name-field-image {
+    .field-name-field-image,
+    .field-name-field-series-image {
       float: right;
       max-width: 50%;
       margin-left: floor(@grid-gutter-width/4);
@@ -161,7 +164,8 @@ h1, h2, h3, h4, h5, h6 {
       padding-bottom: @grid-gutter-width;
     }
 
-    .comment-add {
+    .comment-add,
+    .field-name-field-add-to-calendar {
       .badge;
       padding: floor(@grid-gutter-width/2);
       margin-bottom: @grid-gutter-width;
