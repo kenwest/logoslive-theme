@@ -6778,6 +6778,7 @@ table .checkbox input[type="checkbox"] {
   }
 }
 .logos-live-links .podcasts {
+  margin-bottom: 30px;
   background: #444444;
   color: white;
   border-color: #cccccc;
@@ -6814,6 +6815,7 @@ table .checkbox input[type="checkbox"] {
   color: #e65c24;
   text-decoration: none;
 }
+.logos-live-links .stitcher img,
 .logos-live-links .lightdigital img,
 .logos-live-links .lifefm img {
   max-width: 200px;
