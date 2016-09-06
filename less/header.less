@@ -208,6 +208,8 @@
   }
 
   .title {
+    padding-top: floor(@grid-gutter-width / 2);
+    font-weight: bold;
   }
 
   .contents {
@@ -224,9 +226,13 @@
   }
 
   .itunes,
-  .rss {
+  .rss,
+  .stitcher,
+  .lightdigital,
+  .lifefm {
     font-size: 32px;
     display: inline-block;
+    margin-right: floor(@grid-gutter-width / 2);
   }
 
   .itunes {

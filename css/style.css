@@ -6792,6 +6792,10 @@ table .checkbox input[type="checkbox"] {
   list-style: none;
   white-space: inherit;
 }
+.logos-live-links .title {
+  padding-top: 15px;
+  font-weight: bold;
+}
 .logos-live-links .feeds {
   list-style: none;
   padding: 15px;
@@ -6801,9 +6805,13 @@ table .checkbox input[type="checkbox"] {
   padding: 15px;
 }
 .logos-live-links .itunes,
-.logos-live-links .rss {
+.logos-live-links .rss,
+.logos-live-links .stitcher,
+.logos-live-links .lightdigital,
+.logos-live-links .lifefm {
   font-size: 32px;
   display: inline-block;
+  margin-right: 15px;
 }
 .logos-live-links .itunes a,
 .logos-live-links .itunes a:hover,
