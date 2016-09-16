@@ -145,8 +145,6 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
 
-    .field-name-field-topic,
-    .field-name-field-topics,
     .field-name-field-speakers,
     .field-name-field-bible-reference,
     .field-name-field-episode-date {
@@ -157,8 +155,14 @@ h1, h2, h3, h4, h5, h6 {
 
     .field-name-field-topic,
     .field-name-field-topics {
+      display: inline;
+
       .field-label {
         display: none;
+      }
+
+      .field-items {
+        display: inline;
       }
 
       .field-item {
@@ -178,11 +182,15 @@ h1, h2, h3, h4, h5, h6 {
 
     .field-name-field-date-text,
     .field-name-field-episode-date,
-    .field-name-field-topics,
     .field-name-body,
     .field-name-field-content,
     .field-name-field-addthis {
       padding-bottom: @grid-gutter-width;
+    }
+
+    .field-name-field-topic + .field-name-body,
+    .field-name-field-topics + .field-name-body {
+      padding-top: @grid-gutter-width;
     }
 
     .comment-add,

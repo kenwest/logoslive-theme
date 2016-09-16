@@ -6961,16 +6961,22 @@ h6 {
   max-width: 100%;
   height: auto;
 }
-.block-system .node .field-name-field-topic .field-label,
-.block-system .node .field-name-field-topics .field-label,
 .block-system .node .field-name-field-speakers .field-label,
 .block-system .node .field-name-field-bible-reference .field-label,
 .block-system .node .field-name-field-episode-date .field-label {
   width: 140px;
 }
+.block-system .node .field-name-field-topic,
+.block-system .node .field-name-field-topics {
+  display: inline;
+}
 .block-system .node .field-name-field-topic .field-label,
 .block-system .node .field-name-field-topics .field-label {
   display: none;
+}
+.block-system .node .field-name-field-topic .field-items,
+.block-system .node .field-name-field-topics .field-items {
+  display: inline;
 }
 .block-system .node .field-name-field-topic .field-item,
 .block-system .node .field-name-field-topics .field-item {
@@ -7006,11 +7012,14 @@ h6 {
 }
 .block-system .node .field-name-field-date-text,
 .block-system .node .field-name-field-episode-date,
-.block-system .node .field-name-field-topics,
 .block-system .node .field-name-body,
 .block-system .node .field-name-field-content,
 .block-system .node .field-name-field-addthis {
   padding-bottom: 30px;
+}
+.block-system .node .field-name-field-topic + .field-name-body,
+.block-system .node .field-name-field-topics + .field-name-body {
+  padding-top: 30px;
 }
 .block-system .node .comment-add,
 .block-system .node .field-name-field-add-to-calendar .field-item {
