@@ -51,35 +51,40 @@
     margin: 0;
   }
 
-  .navbar-nav {
+  .primary-nav {
     background-color: @brand-primary;
     width: 100%;
     font-size: @font-size-large;
     margin: 0;
 
-    > .leaf {
-      > a,
-      > a:hover,
-      > a:focus {
-        color: white;
-        background-color: @brand-primary;
-        font-weight: bold;
-      }
-    }
+    .navbar-nav {
+      .container;
 
-    > .active {
-      > a,
-      > a:hover,
-      > a:focus {
-        color: white;
-        background-color: @text-color;
-        font-weight: bold;
+      > .leaf {
+        > a,
+        > a:hover,
+        > a:focus {
+          color: white;
+          background-color: @brand-primary;
+          font-weight: bold;
+        }
+      }
+
+      > .active {
+        > a,
+        > a:hover,
+        > a:focus {
+          color: white;
+          background-color: @text-color;
+          font-weight: bold;
+        }
       }
     }
   }
 
   .navbar-header {
-    margin: 0;
+    .container;
+
     padding-bottom: @grid-gutter-width;
 
     .logo {
