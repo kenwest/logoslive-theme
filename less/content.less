@@ -274,6 +274,7 @@ h1, h2, h3, h4, h5, h6 {
 
       a.jp-play,
       a.jp-pause {
+        top: 20px;
         left: 20px;
       }
 
@@ -283,17 +284,64 @@ h1, h2, h3, h4, h5, h6 {
         left: 76px;
         width: 200px;
       }
+
+      div.jp-progress {
+        top: 32px;
+        height: 15px;
+        position: absolute;
+        overflow: hidden;
+      }
+
+      div.jp-current-time,
+      div.jp-duration {
+        top: 49px;
+        position: absolute;
+        font-style: oblique;
+      }
+
+      div.jp-duration {
+        text-align: right;
+      }
+
+      a.jp-mute,
+      a.jp-unmute {
+        top: 32px;
+        left: 296px;
+        width: 18px;
+        height: 18px;
+      }
+
+      div.jp-volume-bar {
+        top: 37px;
+        left: 324px;
+        width: 46px;
+        height: 5px;
+        position: absolute;
+        overflow: hidden;
+      }
     }
   }
 
   div.jp-interface {
     background-color: inherit;
     border: 0;
+    position: relative;
+    width: 100%;
 
     ul.jp-controls {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline;
+      }
+
       a {
         color: @text-color;
         text-indent: 0;
+        position: absolute;
+        overflow: hidden;
       }
 
       a:hover,
@@ -307,6 +355,26 @@ h1, h2, h3, h4, h5, h6 {
   div.jp-playlist {
     background-color: inherit;
     border-width: 0;
+    width: 100%;
+
+    ul,
+    div.jp-playlist-comment {
+      font-size: 0.9em;
+      list-style-type: none;
+      margin: 0;
+      padding: 0 20px;
+    }
+
+    li.jp-playlist-current {
+      list-style-type: square;
+      list-style-position: inside;
+      padding-left: 8px;
+    }
+
+    li.jp-playlist-last {
+      padding: 5px 0 5px 20px;
+      border-bottom: none;
+    }
   }
 
   div.jp-play-bar,
@@ -317,16 +385,20 @@ h1, h2, h3, h4, h5, h6 {
   div.jp-seek-bar,
   div.jp-volume-bar {
     background: @gray-fplayer-background;
+    cursor: pointer;
+  }
+
+  div.jp-seek-bar {
+    height: 100%;
+  }
+
+  div.jp-volume-bar-value {
+    height: 5px;
   }
 
   div.jp-current-time,
   div.jp-duration {
     font-size: 0.8em;
-  }
-
-  div.jp-playlist ul,
-  div.jp-playlist div.jp-playlist-comment {
-    font-size: 0.9em;
   }
 
   a.jp-next,
@@ -376,10 +448,5 @@ h1, h2, h3, h4, h5, h6 {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-
-  a.jp-mute,
-  a.jp-unmute {
-    height: 18px;;
   }
 }
