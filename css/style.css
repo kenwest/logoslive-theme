@@ -6611,12 +6611,14 @@ table .checkbox input[type="checkbox"] {
   width: 100%;
   font-size: 18px;
   margin: 0;
+  float: left;
 }
 .navbar-default .primary-nav .navbar-nav {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  float: none;
 }
 .navbar-default .primary-nav .navbar-nav:before,
 .navbar-default .primary-nav .navbar-nav:after {
