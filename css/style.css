@@ -6703,12 +6703,11 @@ table .checkbox input[type="checkbox"] {
 }
 .navbar-default .navbar-header .logo {
   max-width: 35%;
-  padding-left: 15px;
+  padding-left: 0;
 }
 @media (min-width: 480px) {
   .navbar-default .navbar-header .logo {
     width: 180px;
-    padding-left: 15px;
     padding-right: 30px;
   }
 }
