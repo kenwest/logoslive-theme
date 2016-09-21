@@ -6967,32 +6967,45 @@ h6 {
 }
 .view-national-blog .views-field-field-speakers,
 .view-activity-to-event .views-field-field-speakers,
+.view-national-news .views-field-field-speakers,
 .region-sidebar-second .views-field-field-speakers,
 .view-national-blog .views-field-field-date-text,
 .view-activity-to-event .views-field-field-date-text,
+.view-national-news .views-field-field-date-text,
 .region-sidebar-second .views-field-field-date-text {
   float: none;
   text-align: inherit;
   width: auto;
 }
 .view-national-blog .views-field-field-thumbnail-image,
-.view-activity-to-event .views-field-field-thumbnail-image {
+.view-activity-to-event .views-field-field-thumbnail-image,
+.view-national-news .views-field-field-thumbnail-image {
   float: left;
 }
 .view-national-blog .views-field-title,
 .view-activity-to-event .views-field-title,
+.view-national-news .views-field-title,
 .view-national-blog .views-field-field-date-text,
 .view-activity-to-event .views-field-field-date-text,
+.view-national-news .views-field-field-date-text,
 .view-national-blog .views-field-body,
-.view-activity-to-event .views-field-body {
+.view-activity-to-event .views-field-body,
+.view-national-news .views-field-body {
   margin-left: 60px;
 }
 .view-national-blog .views-field-body,
-.view-activity-to-event .views-field-body {
+.view-activity-to-event .views-field-body,
+.view-national-news .views-field-body {
   display: inherit;
   margin-bottom: 30px;
 }
-.view-national-library .more-link {
+.view-national-blog .views-field-taxonomy-vocabulary-1,
+.view-activity-to-event .views-field-taxonomy-vocabulary-1,
+.view-national-news .views-field-taxonomy-vocabulary-1 {
+  display: none;
+}
+.view-national-library .more-link,
+.view-national-news .more-link {
   display: none;
 }
 .video-filter {
