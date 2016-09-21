@@ -282,7 +282,12 @@ h1, h2, h3, h4, h5, h6 {
       div.jp-current-time,
       div.jp-duration {
         left: 76px;
-        width: 200px;
+
+        // Mobile and tablet:
+          width: 200px;
+        @media (min-width: @screen-xs-min) {
+          width: 400px;
+        }
       }
 
       div.jp-progress {
@@ -309,6 +314,12 @@ h1, h2, h3, h4, h5, h6 {
         left: 296px;
         width: 18px;
         height: 18px;
+
+        // Mobile and tablet:
+          left: 296px;
+        @media (min-width: @screen-xs-min) {
+          left: 496px;
+        }
       }
 
       div.jp-volume-bar {
@@ -318,6 +329,12 @@ h1, h2, h3, h4, h5, h6 {
         height: 5px;
         position: absolute;
         overflow: hidden;
+
+        // Mobile and tablet:
+          left: 324px;
+        @media (min-width: @screen-xs-min) {
+          left: 524px;
+        }
       }
     }
   }
