@@ -7172,6 +7172,11 @@ h6 {
     width: 480px;
   }
 }
+@media (min-width: 768px) {
+  .domain-logoslive-org div.jp-audio {
+    width: 720px;
+  }
+}
 .domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-interface {
   height: 80px;
 }
@@ -7198,7 +7203,7 @@ h6 {
   .domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-progress,
   .domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-current-time,
   .domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-duration {
-    width: 400px;
+    width: 440px;
   }
 }
 .domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-progress {
@@ -7226,7 +7231,7 @@ h6 {
 @media (min-width: 768px) {
   .domain-logoslive-org div.jp-audio div.jp-type-playlist a.jp-mute,
   .domain-logoslive-org div.jp-audio div.jp-type-playlist a.jp-unmute {
-    left: 496px;
+    left: 536px;
   }
 }
 .domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-volume-bar {
@@ -7239,7 +7244,7 @@ h6 {
 }
 @media (min-width: 768px) {
   .domain-logoslive-org div.jp-audio div.jp-type-playlist div.jp-volume-bar {
-    left: 524px;
+    left: 564px;
   }
 }
 .domain-logoslive-org div.jp-interface {
