@@ -7013,11 +7013,19 @@ h6 {
 .video-filter {
   width: 100%;
   height: auto;
-}
-.region-content .video-filter {
   height: 253px;
 }
 @media (min-width: 480px) {
+  .video-filter {
+    height: 405px;
+  }
+}
+@media (min-width: 768px) {
+  .video-filter {
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
   .region-content .video-filter {
     height: 405px;
   }

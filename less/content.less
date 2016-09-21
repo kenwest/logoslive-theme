@@ -115,13 +115,19 @@ h1, h2, h3, h4, h5, h6 {
 .video-filter {
   width: 100%;
   height: auto;
+  // Mobile:
+    height: 253px;
+  @media (min-width: @screen-xs-min) {
+    height: 405px;
+  }
+  @media (min-width: @screen-sm-min) {
+    height: auto;
+  }
 }
 
 .region-content {
   .video-filter {
-    // Mobile:
-      height: 253px;
-    @media (min-width: @screen-xs-min) {
+    @media (min-width: @screen-sm-min) {
       height: 405px;
     }
   }
