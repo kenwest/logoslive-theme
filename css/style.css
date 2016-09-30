@@ -6911,6 +6911,43 @@ table .checkbox input[type="checkbox"] {
 .logos-live-links .lifefm img {
   max-width: 100px;
 }
+.block-search {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.block-search:before,
+.block-search:after {
+  content: " ";
+  display: table;
+}
+.block-search:after {
+  clear: both;
+}
+.block-search:before,
+.block-search:after {
+  content: " ";
+  display: table;
+}
+.block-search:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .block-search {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .block-search {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .block-search {
+    width: 1170px;
+  }
+}
 h1,
 h2,
 h3,
