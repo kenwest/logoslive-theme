@@ -7351,6 +7351,7 @@ table .checkbox input[type="checkbox"] {
 .navbar-default .navbar-brand {
   float: none;
   line-height: inherit;
+  text-transform: uppercase;
   padding: 0;
   margin: 0;
   font-size: 30px;
