@@ -2,6 +2,14 @@ h1, h2, h3, h4, h5, h6 {
   color: @brand-primary;
 }
 
+p {
+  margin: 0 0 @line-height-computed;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
 // Use contextual links for actions on Nodes. Affects staff only.
 .page-node {
   .tabs--primary.nav-tabs {
@@ -10,7 +18,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-container {
-  padding-top: @grid-gutter-width;
+  padding-top: @line-height-computed;
+}
+
+.page-header,
+.block-title,
+.views-field-title {
+  line-height: 2*@line-height-computed;
+  padding: 0;
+  border: 0;
+  margin: 0 0 @line-height-computed;
+  display: flex;
+
+  i {
+    line-height: 2*@line-height-computed;
+    width: 60px;
+  }
 }
 
 .block-views {
@@ -18,11 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .views-row + .views-row {
-  padding-top: @grid-gutter-width;
-}
-
-.views-field-title {
-  margin-top: 0px;
+  padding-top: @line-height-computed;
 }
 
 .views-field-field-in-activity,
@@ -32,27 +51,21 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-.views-field-field-speakers {
-  float: left;
-}
-
 .views-field-body,
 .views-field-nid {
-  display: inline;
-
   .field-content {
-    display: inline;
   }
 }
 
 .views-field-field-speakers,
 .views-field-field-date-text {
   width: 50%;
+  margin: 0 0 @line-height-computed;
+  font-weight: bold;
 }
 
-.views-field-field-speakers,
-.views-field-field-date-text {
-  font-weight: bold;
+.views-field-field-speakers {
+  float: left;
 }
 
 .views-field-field-date-text {
@@ -76,6 +89,10 @@ h1, h2, h3, h4, h5, h6 {
 .view-activity-to-event,
 .view-national-news,
 .region-sidebar-second {
+  .views-field-field-speakers {
+    margin: 0;
+  }
+
   .views-field-field-speakers,
   .views-field-field-date-text {
     float: none;
@@ -99,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .views-field-body {
     display: inherit;
-    margin-bottom: @grid-gutter-width;
+    margin-bottom: @line-height-computed;
   }
 
   .views-field-taxonomy-vocabulary-1 {
@@ -114,20 +131,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.page-header,
-.block-title {
-  display: flex;
-
-  i {
-    width: 60px;
-  }
-}
-
 /*
  * Node formatting
  */
 
 .block-system {
+  margin-bottom: (2*@line-height-computed);
+
   .node,
   .view {
     max-width: 720px;
@@ -147,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
       max-width: 50%;
       margin-left: floor(@grid-gutter-width/4);
       padding-left: floor(@grid-gutter-width/4);
-      padding-bottom: floor(@grid-gutter-width/2);
+      padding-bottom: @line-height-computed;
 
       img {
         .img-responsive;
@@ -177,8 +187,8 @@ h1, h2, h3, h4, h5, h6 {
       .field-item {
         .badge;
         display: inline-block;
-        padding: 5px;
-        margin: 0 5px 5px 0;
+        padding: floor((@line-height-computed - 12px)/2) floor(@grid-gutter-width/3);
+        margin: 0 floor(@grid-gutter-width/3) @line-height-computed 0;
         background: @text-color;
         color: white;
       }
@@ -194,12 +204,22 @@ h1, h2, h3, h4, h5, h6 {
     .field-name-body,
     .field-name-field-content,
     .field-name-field-addthis {
-      padding-bottom: @grid-gutter-width;
+      margin: 0 0 @line-height-computed;
     }
 
-    .field-name-field-topic + .field-name-body,
-    .field-name-field-topics + .field-name-body {
-      padding-top: @grid-gutter-width;
+    .field-name-field-addthis {
+      a.at300b {
+        height: (2*@line-height-computed);
+        margin: 0;
+      }
+
+      a.addthis_button_facebook {
+        // Mobile:
+          clear: left;
+        @media (min-width: @screen-xs-min) {
+          clear: none;
+        }
+      }
     }
 
     .comment-add,
@@ -207,8 +227,8 @@ h1, h2, h3, h4, h5, h6 {
       .badge;
       width: 280px;
       max-width: 100%;
-      padding: floor(@grid-gutter-width/2);
-      margin-bottom: @grid-gutter-width;
+      padding: @line-height-computed floor(@grid-gutter-width/2);
+      margin-bottom: @line-height-computed;
       border-radius: @grid-gutter-width;
       background: @brand-primary;
 
@@ -254,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
     @media (min-width: @screen-xs-min) {
       width: @screen-xs-min;
     }
-    @media @tablet {
+    @media (min-width: @screen-md-min) {
       width: 720px;
     }
 
@@ -270,7 +290,7 @@ h1, h2, h3, h4, h5, h6 {
 
         // Mobile and tablet:
           left: 324px;
-        @media @tablet {
+        @media (min-width: @screen-md-min) {
           left: 564px;
         }
       }
@@ -280,7 +300,7 @@ h1, h2, h3, h4, h5, h6 {
 
         // Mobile and tablet:
           left: 296px;
-        @media @tablet {
+        @media (min-width: @screen-md-min) {
           left: 536px;
         }
       }
@@ -292,9 +312,22 @@ h1, h2, h3, h4, h5, h6 {
 
         // Mobile and tablet:
           width: 200px;
-        @media @tablet {
+        @media (min-width: @screen-md-min) {
           width: 440px;
         }
+      }
+
+      div.jp-playlist-comment {
+        line-height: @line-height-computed;
+      }
+
+      li,
+      li.jp-playlist-first,
+      li.jp-playlist-last,
+      li.jp-playlist-current {
+        line-height: @line-height-computed;
+        padding: 0 0 0 floor(@grid-gutter-width/2);
+	border: 0;
       }
     }
   }

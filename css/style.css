@@ -7342,6 +7342,9 @@ table .checkbox input[type="checkbox"] {
   background-color: white;
   width: 100%;
 }
+.navbar-default p {
+  margin: 0;
+}
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
@@ -7355,10 +7358,14 @@ table .checkbox input[type="checkbox"] {
   padding: 0;
   margin: 0;
   font-size: 30px;
+  display: none;
 }
 @media (min-width: 768px) {
   .navbar-default .navbar-brand {
+    display: initial;
     font-size: 36px;
+    line-height: 50px;
+    /* .navbar-brand + .lead = .logo */
   }
 }
 .navbar-default .lead {
@@ -7367,6 +7374,7 @@ table .checkbox input[type="checkbox"] {
 @media (min-width: 768px) {
   .navbar-default .lead {
     font-size: 16px;
+    line-height: 30px;
   }
 }
 .navbar-default .navbar-collapse {
@@ -7422,6 +7430,7 @@ table .checkbox input[type="checkbox"] {
   color: white;
   background-color: #df0000;
   font-weight: bold;
+  padding: 20px 15px;
 }
 .navbar-default .primary-nav .navbar-nav > .active > a,
 .navbar-default .primary-nav .navbar-nav > .active > a:hover,
@@ -7436,7 +7445,7 @@ table .checkbox input[type="checkbox"] {
   padding-left: 15px;
   padding-right: 15px;
   float: none;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 @media (min-width: 768px) {
   .navbar-default .navbar-header {
@@ -7466,13 +7475,16 @@ table .checkbox input[type="checkbox"] {
   }
 }
 .navbar-default .navbar-header .logo {
-  max-width: 35%;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 60%;
   padding-left: 0;
 }
 @media (min-width: 480px) {
   .navbar-default .navbar-header .logo {
     width: 180px;
     padding-right: 30px;
+    height: 80px;
   }
 }
 .navbar-default .navbar-header .logo img {
@@ -7480,7 +7492,12 @@ table .checkbox input[type="checkbox"] {
 }
 .navbar-default .navbar-header-name {
   display: inline-block;
-  max-width: 50%;
+  max-width: 60%;
+}
+@media (min-width: 480px) {
+  .navbar-default .navbar-header-name {
+    max-width: 200px;
+  }
 }
 @media (min-width: 768px) {
   .navbar-default .navbar-header-name {
@@ -7488,18 +7505,17 @@ table .checkbox input[type="checkbox"] {
   }
 }
 .front .region-header {
-  /* The focus point of this image is a man's face at the 70% / 70% place */
   background: rgba(0, 0, 0, 0) url("/sites/default/files/images/melbourne/logoslive/logos-live-audience-2.jpg") repeat scroll 50% 50%;
   background-size: cover;
-  padding: 5px 0;
+  padding: 1px 0;
 }
 .front .region-header section {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 @media (min-width: 768px) {
   .front .region-header section {
@@ -7528,15 +7544,7 @@ table .checkbox input[type="checkbox"] {
     margin-left: 0;
   }
 }
-.front .region-header .logos-live-links .btn {
-  width: 100%;
-}
-@media (min-width: 480px) {
-  .front .region-header .logos-live-links .btn {
-    width: 50%;
-  }
-}
-.front .region-header .menu.nav {
+.front .region-header .logos-live-buttons .menu.nav {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -7544,97 +7552,121 @@ table .checkbox input[type="checkbox"] {
   /* Needed since .btn-group is not a mixin */
   /* Needed since .btn-group is not a mixin */
 }
-.front .region-header .menu.nav > .btn {
+.front .region-header .logos-live-buttons .menu.nav > .btn {
   position: relative;
   float: left;
 }
-.front .region-header .menu.nav > .btn:hover,
-.front .region-header .menu.nav > .btn:focus,
-.front .region-header .menu.nav > .btn:active,
-.front .region-header .menu.nav > .btn.active {
+.front .region-header .logos-live-buttons .menu.nav > .btn:hover,
+.front .region-header .logos-live-buttons .menu.nav > .btn:focus,
+.front .region-header .logos-live-buttons .menu.nav > .btn:active,
+.front .region-header .logos-live-buttons .menu.nav > .btn.active {
   z-index: 2;
 }
-.front .region-header .menu.nav .btn + .btn,
-.front .region-header .menu.nav .btn + .btn-group,
-.front .region-header .menu.nav .btn-group + .btn,
-.front .region-header .menu.nav .btn-group + .btn-group {
+.front .region-header .logos-live-buttons .menu.nav .btn + .btn,
+.front .region-header .logos-live-buttons .menu.nav .btn + .btn-group,
+.front .region-header .logos-live-buttons .menu.nav .btn-group + .btn,
+.front .region-header .logos-live-buttons .menu.nav .btn-group + .btn-group {
   margin-left: -1px;
 }
-@media (min-width: 480px) {
-  .front .region-header .menu.nav {
+@media (min-width: 768px) {
+  .front .region-header .logos-live-buttons .menu.nav {
     width: 50%;
   }
 }
-.front .region-header .menu.nav li {
+.front .region-header .logos-live-buttons .menu.nav li {
   /* Assumes the classes "btn btn-default" are added by the Menu Attributes module */
   width: 50%;
+  padding: 0;
 }
-.front .region-header .menu.nav li a {
-  font-size: 18px;
+.front .region-header .logos-live-buttons .menu.nav li a {
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
+  line-height: 60px;
+  padding: 9px 0;
+  /* 1px border */
 }
-.front .region-header .menu.nav li:not(:first-child) {
+.front .region-header .logos-live-buttons .menu.nav li:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
-.front .region-header .menu.nav li:not(:last-child) {
+.front .region-header .logos-live-buttons .menu.nav li:not(:last-child) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
+}
+.front .region-header .logos-live-links .podcasts,
+.front .region-header .logos-live-links .broadcasts {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .front .region-header .logos-live-links .podcasts,
+  .front .region-header .logos-live-links .broadcasts {
+    width: 50%;
+  }
 }
 .front .region-header .content-search {
   width: 100%;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .front .region-header .content-search {
     width: 50%;
   }
 }
 .not-front .region-header form#search-block-form {
+  margin: 20px 0;
   width: 100%;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .not-front .region-header form#search-block-form {
     float: right;
     width: 280px;
-    margin: 10px 0;
   }
 }
+.logos-live-links .podcasts,
+.logos-live-links .broadcasts {
+  padding: 19px 15px;
+  /* 1px border */
+  list-style: none;
+  white-space: inherit;
+  border: 1px solid;
+  border-radius: 4px;
+}
 .logos-live-links .podcasts {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   background: #333333;
   color: white;
   border-color: #888888;
-  list-style: none;
-  white-space: inherit;
 }
 .logos-live-links .broadcasts {
+  margin-bottom: 0;
   background: white;
   color: #333333;
   border-color: #cccccc;
-  list-style: none;
-  white-space: inherit;
 }
 .logos-live-links .title {
-  padding-top: 15px;
+  padding: 10px 0;
+  text-align: center;
   font-weight: bold;
 }
-.logos-live-links .feeds {
-  list-style: none;
-  padding: 15px;
+.logos-live-links .contents {
+  padding: 10px 0;
 }
+.logos-live-links .feeds,
 .logos-live-links .stations {
   list-style: none;
-  padding: 15px;
+  padding: 0;
+  margin: 0 -15px;
+  text-align: center;
 }
 .logos-live-links .itunes,
 .logos-live-links .rss,
 .logos-live-links .stitcher,
 .logos-live-links .lightdigital,
 .logos-live-links .lifefm {
-  font-size: 32px;
+  font-size: 28px;
+  line-height: 40px;
   display: inline-block;
-  margin-right: 15px;
+  margin: 0 15px;
 }
 .logos-live-links .itunes a,
 .logos-live-links .itunes a:hover,
@@ -7654,10 +7686,19 @@ table .checkbox input[type="checkbox"] {
   display: block;
   max-width: 100%;
   height: auto;
+  display: inline-block;
 }
-.logos-live-links .stitcher img,
+.logos-live-links .stitcher img {
+  max-width: 200px;
+}
+.logos-live-links .lightdigital {
+  height: 60px;
+}
 .logos-live-links .lightdigital img {
   max-width: 200px;
+}
+.logos-live-links .lifefm {
+  height: 80px;
 }
 .logos-live-links .lifefm img {
   max-width: 100px;
@@ -7694,6 +7735,18 @@ table .checkbox input[type="checkbox"] {
     margin-right: 0;
     margin-left: 0;
   }
+}
+.block-search .form-control {
+  height: 40px;
+  padding: 9px 15px;
+  /* 1px border */
+}
+.block-search .btn {
+  padding: 9px 15px;
+  /* 1px border */
+}
+.block-search .form-group {
+  margin: 0;
 }
 /*
  * Common views formatting
@@ -7919,20 +7972,38 @@ h5,
 h6 {
   color: #df0000;
 }
+p {
+  margin: 0 0 20px;
+}
+ul {
+  margin-bottom: 0;
+}
 .page-node .tabs--primary.nav-tabs {
   display: none;
 }
 .main-container {
-  padding-top: 30px;
+  padding-top: 20px;
+}
+.page-header,
+.block-title,
+.views-field-title {
+  line-height: 40px;
+  padding: 0;
+  border: 0;
+  margin: 0 0 20px;
+  display: flex;
+}
+.page-header i,
+.block-title i,
+.views-field-title i {
+  line-height: 40px;
+  width: 60px;
 }
 .block-views {
   max-width: 720px;
 }
 .views-row + .views-row {
-  padding-top: 30px;
-}
-.views-field-title {
-  margin-top: 0px;
+  padding-top: 20px;
 }
 .views-field-field-in-activity,
 .views-field-field-is-audio,
@@ -7940,24 +8011,14 @@ h6 {
 .views-field-field-is-video {
   display: none;
 }
-.views-field-field-speakers {
-  float: left;
-}
-.views-field-body,
-.views-field-nid {
-  display: inline;
-}
-.views-field-body .field-content,
-.views-field-nid .field-content {
-  display: inline;
-}
 .views-field-field-speakers,
 .views-field-field-date-text {
   width: 50%;
-}
-.views-field-field-speakers,
-.views-field-field-date-text {
+  margin: 0 0 20px;
   font-weight: bold;
+}
+.views-field-field-speakers {
+  float: left;
 }
 .views-field-field-date-text {
   float: right;
@@ -7968,6 +8029,12 @@ h6 {
 }
 .not-front .region-content .views-field-body {
   display: block;
+}
+.view-national-blog .views-field-field-speakers,
+.view-activity-to-event .views-field-field-speakers,
+.view-national-news .views-field-field-speakers,
+.region-sidebar-second .views-field-field-speakers {
+  margin: 0;
 }
 .view-national-blog .views-field-field-speakers,
 .view-activity-to-event .views-field-field-speakers,
@@ -8001,7 +8068,7 @@ h6 {
 .view-activity-to-event .views-field-body,
 .view-national-news .views-field-body {
   display: inherit;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .view-national-blog .views-field-taxonomy-vocabulary-1,
 .view-activity-to-event .views-field-taxonomy-vocabulary-1,
@@ -8012,17 +8079,12 @@ h6 {
 .view-national-news .more-link {
   display: none;
 }
-.page-header,
-.block-title {
-  display: flex;
-}
-.page-header i,
-.block-title i {
-  width: 60px;
-}
 /*
  * Node formatting
  */
+.block-system {
+  margin-bottom: 40px;
+}
 .block-system .node,
 .block-system .view {
   max-width: 720px;
@@ -8039,7 +8101,7 @@ h6 {
   max-width: 50%;
   margin-left: 7px;
   padding-left: 7px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 .block-system .node .field-name-field-image img,
 .block-system .node .field-name-field-series-image img,
@@ -8079,8 +8141,8 @@ h6 {
   background-color: #777777;
   border-radius: 10px;
   display: inline-block;
-  padding: 5px;
-  margin: 0 5px 5px 0;
+  padding: 4px 10px;
+  margin: 0 10px 20px 0;
   background: #333333;
   color: white;
 }
@@ -8138,11 +8200,19 @@ a.block-system .node .field-name-field-topics .field-item:focus {
 .block-system .node .field-name-body,
 .block-system .node .field-name-field-content,
 .block-system .node .field-name-field-addthis {
-  padding-bottom: 30px;
+  margin: 0 0 20px;
 }
-.block-system .node .field-name-field-topic + .field-name-body,
-.block-system .node .field-name-field-topics + .field-name-body {
-  padding-top: 30px;
+.block-system .node .field-name-field-addthis a.at300b {
+  height: 40px;
+  margin: 0;
+}
+.block-system .node .field-name-field-addthis a.addthis_button_facebook {
+  clear: left;
+}
+@media (min-width: 480px) {
+  .block-system .node .field-name-field-addthis a.addthis_button_facebook {
+    clear: none;
+  }
 }
 .block-system .node .comment-add,
 .block-system .node .field-name-field-add-to-calendar .field-item {
@@ -8160,8 +8230,8 @@ a.block-system .node .field-name-field-topics .field-item:focus {
   border-radius: 10px;
   width: 280px;
   max-width: 100%;
-  padding: 15px;
-  margin-bottom: 30px;
+  padding: 20px 15px;
+  margin-bottom: 20px;
   border-radius: 30px;
   background: #df0000;
 }
@@ -8257,7 +8327,7 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
     width: 480px;
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 992px) {
   .block div.jp-audio {
     width: 720px;
   }
@@ -8270,7 +8340,7 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
   width: 46px;
   left: 324px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 992px) {
   .block div.jp-audio div.jp-type-playlist div.jp-volume-bar {
     left: 564px;
   }
@@ -8279,7 +8349,7 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
 .block div.jp-audio div.jp-type-playlist a.jp-unmute {
   left: 296px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 992px) {
   .block div.jp-audio div.jp-type-playlist a.jp-mute,
   .block div.jp-audio div.jp-type-playlist a.jp-unmute {
     left: 536px;
@@ -8291,12 +8361,23 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
   left: 76px;
   width: 200px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 992px) {
   .block div.jp-audio div.jp-type-playlist div.jp-progress,
   .block div.jp-audio div.jp-type-playlist div.jp-current-time,
   .block div.jp-audio div.jp-type-playlist div.jp-duration {
     width: 440px;
   }
+}
+.block div.jp-audio div.jp-type-playlist div.jp-playlist-comment {
+  line-height: 20px;
+}
+.block div.jp-audio div.jp-type-playlist li,
+.block div.jp-audio div.jp-type-playlist li.jp-playlist-first,
+.block div.jp-audio div.jp-type-playlist li.jp-playlist-last,
+.block div.jp-audio div.jp-type-playlist li.jp-playlist-current {
+  line-height: 20px;
+  padding: 0 0 0 15px;
+  border: 0;
 }
 .footer {
   background-color: #333333;
