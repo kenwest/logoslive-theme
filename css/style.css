@@ -7508,6 +7508,7 @@ table .checkbox input[type="checkbox"] {
   background: rgba(0, 0, 0, 0) url("/sites/default/files/images/melbourne/logoslive/logos-live-audience-2.jpg") repeat scroll 50% 50%;
   background-size: cover;
   padding: 1px 0;
+  margin: 0 0 20px;
 }
 .front .region-header section {
   margin-right: auto;
