@@ -77,7 +77,6 @@
           color: white;
           background-color: @brand-primary;
           font-weight: bold;
-          padding: @line-height-computed floor(@grid-gutter-width/2);
         }
       }
 
@@ -88,6 +87,28 @@
           color: white;
           background-color: @text-color;
           font-weight: bold;
+        }
+      }
+
+      > .leaf {
+        > a {
+          // Mobile and tablet:
+            padding: floor(@line-height-computed/2) floor(@grid-gutter-width/2);
+          @media (min-width: @screen-sm-min) {
+            padding: @line-height-computed floor(@grid-gutter-width/2);
+          }
+        }
+      }
+
+      > .leaf.first {
+        > a {
+          padding-top: @line-height-computed;
+        }
+      }
+
+      > .leaf.last {
+        > a {
+          padding-bottom: @line-height-computed;
         }
       }
     }

@@ -7430,7 +7430,6 @@ table .checkbox input[type="checkbox"] {
   color: white;
   background-color: #df0000;
   font-weight: bold;
-  padding: 20px 15px;
 }
 .navbar-default .primary-nav .navbar-nav > .active > a,
 .navbar-default .primary-nav .navbar-nav > .active > a:hover,
@@ -7438,6 +7437,20 @@ table .checkbox input[type="checkbox"] {
   color: white;
   background-color: #333333;
   font-weight: bold;
+}
+.navbar-default .primary-nav .navbar-nav > .leaf > a {
+  padding: 10px 15px;
+}
+@media (min-width: 768px) {
+  .navbar-default .primary-nav .navbar-nav > .leaf > a {
+    padding: 20px 15px;
+  }
+}
+.navbar-default .primary-nav .navbar-nav > .leaf.first > a {
+  padding-top: 20px;
+}
+.navbar-default .primary-nav .navbar-nav > .leaf.last > a {
+  padding-bottom: 20px;
 }
 .navbar-default .navbar-header {
   margin-right: auto;
