@@ -7362,10 +7362,11 @@ table .checkbox input[type="checkbox"] {
 }
 @media (min-width: 768px) {
   .navbar-default .navbar-brand {
-    display: initial;
+    display: inline-block;
     font-size: 36px;
-    line-height: 50px;
-    /* .navbar-brand + .lead = .logo */
+    line-height: 35px;
+    /* Line up site name with name in logo */
+    height: 50px;
   }
 }
 .navbar-default .lead {
@@ -7374,7 +7375,10 @@ table .checkbox input[type="checkbox"] {
 @media (min-width: 768px) {
   .navbar-default .lead {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 22px;
+    /*Line up tag line with name in logo */
+    height: 30px;
+    /* .navbar-brand + .lead = .logo */
   }
 }
 .navbar-default .navbar-collapse {
