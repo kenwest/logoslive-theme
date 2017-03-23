@@ -8289,6 +8289,9 @@ a.block-system .node .field-name-field-topics .field-item:focus {
     clear: none;
   }
 }
+.block-system .node .comment-add {
+  margin-bottom: 20px;
+}
 .block-system .node .comment-add,
 .block-system .node .field-name-field-civievent .field-item,
 .block-system .node .field-name-field-add-to-calendar .field-item {
@@ -8307,7 +8310,6 @@ a.block-system .node .field-name-field-topics .field-item:focus {
   width: 280px;
   max-width: 100%;
   padding: 20px 15px;
-  margin-bottom: 20px;
   border-radius: 30px;
   background: #df0000;
 }
