@@ -7980,6 +7980,55 @@ table .checkbox input[type="checkbox"] {
   background: none;
 }
 /*
+ * Common CiviCRM formatting
+ */
+.block .crm-container,
+.block .crm-container-snippet {
+  padding: 20px 15px;
+}
+.block .crm-container .crm-section .label,
+.block .crm-container-snippet .crm-section .label {
+  color: inherit;
+  font-size: 100%;
+  white-space: inherit;
+}
+.block .crm-container .crm-section .label label,
+.block .crm-container-snippet .crm-section .label label {
+  display: inline-block;
+}
+.block .crm-container .crm-section .label .crm-marker,
+.block .crm-container-snippet .crm-section .label .crm-marker {
+  float: right;
+  margin-right: -15px;
+}
+.block .crm-container .crm-section .content,
+.block .crm-container-snippet .crm-section .content {
+  padding: 5px;
+}
+.block .crm-container.crm-public .select2-container .select2-choice {
+  height: auto !important;
+}
+.progress.payment {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+.progress.payment .progress-bar {
+  width: 33.33%;
+  padding: 5px;
+  font-size: inherit;
+}
+.progress.payment .progress-bar.past {
+  background-color: #333333;
+}
+.progress.payment .progress-bar.present {
+  font-weight: bold;
+  background-color: #df0000;
+}
+.progress.payment .progress-bar.future {
+  background-color: #ff4646;
+}
+/*
  * Prevent date pickers from being obscured by other items
  */
 #ui-datepicker-div {
@@ -8116,6 +8165,7 @@ ul {
 }
 .block-system .node .field-name-field-image,
 .block-system .node .field-name-field-series-image,
+.block-system .node .field-name-field-civievent,
 .block-system .node .field-name-field-add-to-calendar {
   float: right;
   clear: right;
@@ -8126,6 +8176,7 @@ ul {
 }
 .block-system .node .field-name-field-image img,
 .block-system .node .field-name-field-series-image img,
+.block-system .node .field-name-field-civievent img,
 .block-system .node .field-name-field-add-to-calendar img {
   display: block;
   max-width: 100%;
@@ -8236,6 +8287,7 @@ a.block-system .node .field-name-field-topics .field-item:focus {
   }
 }
 .block-system .node .comment-add,
+.block-system .node .field-name-field-civievent .field-item,
 .block-system .node .field-name-field-add-to-calendar .field-item {
   display: inline-block;
   min-width: 10px;
@@ -8257,85 +8309,114 @@ a.block-system .node .field-name-field-topics .field-item:focus {
   background: #df0000;
 }
 .block-system .node .comment-add:empty,
+.block-system .node .field-name-field-civievent .field-item:empty,
 .block-system .node .field-name-field-add-to-calendar .field-item:empty {
   display: none;
 }
 .btn .block-system .node .comment-add,
+.btn .block-system .node .field-name-field-civievent .field-item,
 .btn .block-system .node .field-name-field-add-to-calendar .field-item {
   position: relative;
   top: -1px;
 }
 .btn-xs .block-system .node .comment-add,
+.btn-xs .block-system .node .field-name-field-civievent .field-item,
 .btn-xs .block-system .node .field-name-field-add-to-calendar .field-item,
 .btn-group-xs > .btn .block-system .node .comment-add,
+.btn-group-xs > .btn .block-system .node .field-name-field-civievent .field-item,
 .btn-group-xs > .btn .block-system .node .field-name-field-add-to-calendar .field-item {
   top: 0;
   padding: 1px 5px;
 }
 a.block-system .node .comment-add:hover,
+a.block-system .node .field-name-field-civievent .field-item:hover,
 a.block-system .node .field-name-field-add-to-calendar .field-item:hover,
 a.block-system .node .comment-add:focus,
+a.block-system .node .field-name-field-civievent .field-item:focus,
 a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
 }
 .list-group-item.active > .block-system .node .comment-add,
+.list-group-item.active > .block-system .node .field-name-field-civievent .field-item,
 .list-group-item.active > .block-system .node .field-name-field-add-to-calendar .field-item,
 .nav-pills > .active > a > .block-system .node .comment-add,
+.nav-pills > .active > a > .block-system .node .field-name-field-civievent .field-item,
 .nav-pills > .active > a > .block-system .node .field-name-field-add-to-calendar .field-item {
   color: #df0000;
   background-color: #ffffff;
 }
 .list-group-item > .block-system .node .comment-add,
+.list-group-item > .block-system .node .field-name-field-civievent .field-item,
 .list-group-item > .block-system .node .field-name-field-add-to-calendar .field-item {
   float: right;
 }
 .list-group-item > .block-system .node .comment-add + .block-system .node .comment-add,
+.list-group-item > .block-system .node .comment-add + .block-system .node .field-name-field-civievent .field-item,
 .list-group-item > .block-system .node .comment-add + .block-system .node .field-name-field-add-to-calendar .field-item,
+.list-group-item > .block-system .node .field-name-field-civievent .field-item + .block-system .node .comment-add,
+.list-group-item > .block-system .node .field-name-field-civievent .field-item + .block-system .node .field-name-field-civievent .field-item,
+.list-group-item > .block-system .node .field-name-field-civievent .field-item + .block-system .node .field-name-field-add-to-calendar .field-item,
 .list-group-item > .block-system .node .field-name-field-add-to-calendar .field-item + .block-system .node .comment-add,
+.list-group-item > .block-system .node .field-name-field-add-to-calendar .field-item + .block-system .node .field-name-field-civievent .field-item,
 .list-group-item > .block-system .node .field-name-field-add-to-calendar .field-item + .block-system .node .field-name-field-add-to-calendar .field-item {
   margin-right: 5px;
 }
 .nav-pills > li > a > .block-system .node .comment-add,
+.nav-pills > li > a > .block-system .node .field-name-field-civievent .field-item,
 .nav-pills > li > a > .block-system .node .field-name-field-add-to-calendar .field-item {
   margin-left: 3px;
 }
 .block-system .node .comment-add a,
+.block-system .node .field-name-field-civievent .field-item a,
 .block-system .node .field-name-field-add-to-calendar .field-item a,
 .block-system .node .comment-add a:hover,
+.block-system .node .field-name-field-civievent .field-item a:hover,
 .block-system .node .field-name-field-add-to-calendar .field-item a:hover,
 .block-system .node .comment-add a:focus,
+.block-system .node .field-name-field-civievent .field-item a:focus,
 .block-system .node .field-name-field-add-to-calendar .field-item a:focus {
   font-size: 14px;
   font-weight: bold;
   color: white;
+  background: #df0000;
 }
 @media (min-width: 480px) {
   .block-system .node .comment-add a,
+  .block-system .node .field-name-field-civievent .field-item a,
   .block-system .node .field-name-field-add-to-calendar .field-item a,
   .block-system .node .comment-add a:hover,
+  .block-system .node .field-name-field-civievent .field-item a:hover,
   .block-system .node .field-name-field-add-to-calendar .field-item a:hover,
   .block-system .node .comment-add a:focus,
+  .block-system .node .field-name-field-civievent .field-item a:focus,
   .block-system .node .field-name-field-add-to-calendar .field-item a:focus {
     font-size: 18px;
   }
 }
 .block-system .node .comment-add .dropdown a,
+.block-system .node .field-name-field-civievent .field-item .dropdown a,
 .block-system .node .field-name-field-add-to-calendar .field-item .dropdown a {
   padding: 0;
+  height: 20px;
 }
 .block-system .node .comment-add .dropdown-menu a,
+.block-system .node .field-name-field-civievent .field-item .dropdown-menu a,
 .block-system .node .field-name-field-add-to-calendar .field-item .dropdown-menu a,
 .block-system .node .comment-add .dropdown-menu a:hover,
+.block-system .node .field-name-field-civievent .field-item .dropdown-menu a:hover,
 .block-system .node .field-name-field-add-to-calendar .field-item .dropdown-menu a:hover,
 .block-system .node .comment-add .dropdown-menu a:focus,
+.block-system .node .field-name-field-civievent .field-item .dropdown-menu a:focus,
 .block-system .node .field-name-field-add-to-calendar .field-item .dropdown-menu a:focus {
   padding: 7px;
+  height: 40px;
   text-align: left;
   font-size: 14px;
   font-weight: normal;
   color: #df0000;
+  background: white;
 }
 /*
  * jPlayer configuration

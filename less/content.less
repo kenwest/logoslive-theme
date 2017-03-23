@@ -151,6 +151,7 @@ ul {
 
     .field-name-field-image,
     .field-name-field-series-image,
+    .field-name-field-civievent,
     .field-name-field-add-to-calendar {
       float: right;
       clear: right;
@@ -223,6 +224,7 @@ ul {
     }
 
     .comment-add,
+    .field-name-field-civievent .field-item,
     .field-name-field-add-to-calendar .field-item {
       .badge;
       width: 280px;
@@ -242,10 +244,12 @@ ul {
         }
         font-weight: bold;
         color: white;
+        background: @brand-primary;
       }
 
       .dropdown a {
         padding: 0;
+        height: @line-height-computed;
       }
 
       .dropdown-menu {
@@ -253,10 +257,12 @@ ul {
         a:hover,
         a:focus {
           padding: floor(@grid-gutter-width/4);
+          height: 2*@line-height-computed;
           text-align: left;
           font-size: @font-size-base;
           font-weight: normal;
           color: @brand-primary;
+          background: white;
         }
       }
     }
