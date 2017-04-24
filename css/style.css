@@ -8075,6 +8075,7 @@ ul {
 .views-row + .views-row {
   padding-top: 20px;
 }
+.views-field-field-thumbnail-image,
 .views-field-field-in-activity,
 .views-field-field-is-audio,
 .views-field-field-is-text,
@@ -8121,6 +8122,7 @@ ul {
 .view-national-blog .views-field-field-thumbnail-image,
 .view-activity-to-event .views-field-field-thumbnail-image,
 .view-national-news .views-field-field-thumbnail-image {
+  display: block;
   float: left;
 }
 .view-national-blog .views-field-title,
