@@ -7370,6 +7370,7 @@ table .checkbox input[type="checkbox"] {
   }
 }
 .navbar-default .lead {
+  max-width: 180px;
   font-size: 14px;
 }
 @media (min-width: 768px) {
