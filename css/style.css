@@ -8136,6 +8136,11 @@ ul {
   display: block;
   float: left;
 }
+.view-national-blog .views-field-field-thumbnail-image img,
+.view-activity-to-event .views-field-field-thumbnail-image img,
+.view-national-news .views-field-field-thumbnail-image img {
+  width: 50px;
+}
 .view-national-blog .views-field-title,
 .view-activity-to-event .views-field-title,
 .view-national-news .views-field-title,
