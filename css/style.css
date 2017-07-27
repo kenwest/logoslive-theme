@@ -6482,7 +6482,9 @@ button.close {
 .front .region-header section:before,
 .front .region-header section:after,
 .block-search:before,
-.block-search:after {
+.block-search:after,
+.stack:before,
+.stack:after {
   content: " ";
   display: table;
 }
@@ -6505,7 +6507,8 @@ button.close {
 .navbar-default .primary-nav .navbar-nav:after,
 .navbar-default .navbar-header:after,
 .front .region-header section:after,
-.block-search:after {
+.block-search:after,
+.stack:after {
   clear: both;
 }
 .center-block {
@@ -7773,6 +7776,32 @@ table .checkbox input[type="checkbox"] {
 /*
  * Common text formatting
  */
+/*
+ * Rather than having an empty paragraph, format the previous paragraph with a
+ * margin-bottom that is the same as if an empty paragraph was present. This is
+ * a paragraph line-height plus 2 paragraph margin-bottoms (1 + 2 * 0.5 = 2).
+ */
+.paragraph-plus-spacer {
+  margin-bottom: 40px;
+}
+.stack {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.stack .box {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .stack .box {
+    float: left;
+    width: 50%;
+  }
+}
 .link-button {
   display: inline-block;
   min-width: 10px;
@@ -8075,6 +8104,10 @@ a.link-button:focus {
 }
 .block .crm-container.crm-public .select2-container .select2-choice {
   height: auto !important;
+}
+.block .crm-container .credit_card_type-section .crm-credit_card_type-icons a {
+  width: 52px;
+  height: 33px;
 }
 .progress.payment {
   width: 100%;
