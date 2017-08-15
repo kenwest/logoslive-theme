@@ -8434,6 +8434,9 @@ a.block-system .node .field-name-field-topics .field-item:focus {
 .block-system .node .field-name-field-addthis {
   margin: 0 0 20px;
 }
+.block-system .node .field-name-field-addthis {
+  clear: both;
+}
 .block-system .node .field-name-field-addthis a.at300b {
   height: 40px;
   margin: 0;
