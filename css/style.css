@@ -8173,6 +8173,12 @@ div.token-input-dropdown {
   background-color: #ff4646;
 }
 /*
+ * Common IFRAME formatting
+ */
+iframe {
+  max-width: 100%;
+}
+/*
  * Prevent date pickers from being obscured by other items
  */
 #ui-datepicker-div {
