@@ -8181,6 +8181,17 @@ div.token-input-dropdown {
   background-color: #ff4646;
 }
 /*
+ * GMap configuration
+ */
+.gmap {
+  width: 100% !important;
+}
+.gmap .gmap-popup .views-field {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+/*
  * Common IFRAME formatting
  */
 iframe {
