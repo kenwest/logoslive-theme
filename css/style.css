@@ -8315,6 +8315,26 @@ ul {
   display: none;
 }
 /*
+ * Specific view formatting
+ */
+.view-reaching-city-civicrm-event-price h3 {
+  margin: 0;
+}
+.view-reaching-city-civicrm-event-price h3 .Radio,
+.view-reaching-city-civicrm-event-price h3 .CheckBox,
+.view-reaching-city-civicrm-event-price h3 .Text {
+  display: none;
+}
+.view-reaching-city-civicrm-event-price h3 .Select {
+  padding-top: 20px;
+}
+.view-reaching-city-civicrm-event-price .views-row {
+  padding-top: 20px;
+}
+.view-reaching-city-civicrm-event-price .views-row + h3 {
+  padding: 0;
+}
+/*
  * Node and entity formatting
  */
 .block-system {
@@ -8605,6 +8625,96 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
   font-weight: normal;
   color: #df0000;
   background: white;
+}
+/*
+ * CiviCRM Event entity pages
+ */
+.page-civicrm-event .views-field-field-date-text {
+  margin-left: 0;
+  line-height: 40px;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 18px;
+}
+.page-civicrm-event .views-field-nothing {
+  /* Address */
+  color: #333333;
+  line-height: 20px;
+  font-size: 18px;
+}
+.page-civicrm-event .view-content h3 {
+  color: #333333;
+  line-height: 20px;
+  font-size: 14px;
+}
+.page-civicrm-event .views-field-amount {
+  float: right;
+}
+.page-civicrm-event .views-field-id {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #777777;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background: #df0000;
+}
+.page-civicrm-event .views-field-id:empty {
+  display: none;
+}
+.btn .page-civicrm-event .views-field-id {
+  position: relative;
+  top: -1px;
+}
+.btn-xs .page-civicrm-event .views-field-id,
+.btn-group-xs > .btn .page-civicrm-event .views-field-id {
+  top: 0;
+  padding: 1px 5px;
+}
+a.page-civicrm-event .views-field-id:hover,
+a.page-civicrm-event .views-field-id:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.list-group-item.active > .page-civicrm-event .views-field-id,
+.nav-pills > .active > a > .page-civicrm-event .views-field-id {
+  color: #df0000;
+  background-color: #ffffff;
+}
+.list-group-item > .page-civicrm-event .views-field-id {
+  float: right;
+}
+.list-group-item > .page-civicrm-event .views-field-id + .page-civicrm-event .views-field-id {
+  margin-right: 5px;
+}
+.nav-pills > li > a > .page-civicrm-event .views-field-id {
+  margin-left: 3px;
+}
+.page-civicrm-event .views-field-id a,
+.page-civicrm-event .views-field-id a:hover,
+.page-civicrm-event .views-field-id a:focus {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background: #df0000;
+}
+@media (min-width: 480px) {
+  .page-civicrm-event .views-field-id a,
+  .page-civicrm-event .views-field-id a:hover,
+  .page-civicrm-event .views-field-id a:focus {
+    font-size: 18px;
+  }
 }
 /*
  * jPlayer configuration
