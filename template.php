@@ -14,3 +14,10 @@ function logoslive_node_view_alter(&$build) {
     $build['#contextual_links']['node'] = array('node', array($build['#node']->nid));
   }
 }
+
+/*
+ * An implementation of theme_entity_property()
+ */
+function logoslive_entity_property($variables) {
+  return cbf_entity_property($variables);
+}
