@@ -63,9 +63,17 @@
   .primary-nav {
     background-color: @brand-primary;
     width: 100%;
-    font-size: @font-size-large;
     margin: 0;
     float: left;
+
+    // Mobile and tablet:
+      font-size: @font-size-large;
+    @media (min-width: @screen-sm-min) {
+      font-size: @font-size-base;
+    }
+    @media (min-width: @screen-md-min) {
+      font-size: @font-size-large;
+    }
 
     .navbar-nav {
       .container;
@@ -74,7 +82,7 @@
       padding: 0;
       margin: 0 auto;
 
-      > .leaf {
+      li {
         > a,
         > a:hover,
         > a:focus {
@@ -82,9 +90,63 @@
           background-color: @brand-primary;
           font-weight: bold;
         }
+
+        > a {
+          // Mobile and tablet:
+            padding: floor(@line-height-computed/2) floor(@grid-gutter-width/2);
+          @media (min-width: @screen-sm-min) {
+            padding: @line-height-computed floor(@grid-gutter-width/2);
+          }
+        }
+
+        &.first {
+          > a {
+            padding-top: @line-height-computed;
+          }
+        }
+
+        &.last {
+          > a {
+            padding-bottom: @line-height-computed;
+          }
+        }
+
+        .dropdown-menu {
+          padding: 0;
+          border: 0;
+
+          // Mobile and tablet:
+            font-size: @font-size-large;
+          @media (min-width: @screen-sm-min) {
+            font-size: @font-size-base;
+          }
+          @media (min-width: @screen-md-min) {
+            font-size: @font-size-large;
+          }
+
+          a {
+            padding: floor(@line-height-computed/2) floor(@grid-gutter-width/2);
+          }
+
+          .first {
+            > a {
+              padding-top: floor(@line-height-computed/2);
+            }
+          }
+
+          .last {
+            > a {
+              // Mobile and tablet:
+                padding-bottom: @line-height-computed;
+              @media (min-width: @screen-sm-min) {
+                padding-bottom: floor(@line-height-computed/2);
+              }
+            }
+          }
+        }
       }
 
-      > .active {
+      .leaf.active {
         > a,
         > a:hover,
         > a:focus {
@@ -94,26 +156,8 @@
         }
       }
 
-      > .leaf {
-        > a {
-          // Mobile and tablet:
-            padding: floor(@line-height-computed/2) floor(@grid-gutter-width/2);
-          @media (min-width: @screen-sm-min) {
-            padding: @line-height-computed floor(@grid-gutter-width/2);
-          }
-        }
-      }
-
-      > .leaf.first {
-        > a {
-          padding-top: @line-height-computed;
-        }
-      }
-
-      > .leaf.last {
-        > a {
-          padding-bottom: @line-height-computed;
-        }
+      .open .dropdown-menu > li > a {
+        color: white;
       }
     }
   }

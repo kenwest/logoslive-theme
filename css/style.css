@@ -7398,9 +7398,19 @@ table .checkbox input[type="checkbox"] {
 .navbar-default .primary-nav {
   background-color: #df0000;
   width: 100%;
-  font-size: 18px;
   margin: 0;
   float: left;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .navbar-default .primary-nav {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-default .primary-nav {
+    font-size: 18px;
+  }
 }
 .navbar-default .primary-nav .navbar-nav {
   margin-right: auto;
@@ -7438,33 +7448,65 @@ table .checkbox input[type="checkbox"] {
     margin-left: 0;
   }
 }
-.navbar-default .primary-nav .navbar-nav > .leaf > a,
-.navbar-default .primary-nav .navbar-nav > .leaf > a:hover,
-.navbar-default .primary-nav .navbar-nav > .leaf > a:focus {
+.navbar-default .primary-nav .navbar-nav li > a,
+.navbar-default .primary-nav .navbar-nav li > a:hover,
+.navbar-default .primary-nav .navbar-nav li > a:focus {
   color: white;
   background-color: #df0000;
   font-weight: bold;
 }
-.navbar-default .primary-nav .navbar-nav > .active > a,
-.navbar-default .primary-nav .navbar-nav > .active > a:hover,
-.navbar-default .primary-nav .navbar-nav > .active > a:focus {
+.navbar-default .primary-nav .navbar-nav li > a {
+  padding: 10px 15px;
+}
+@media (min-width: 768px) {
+  .navbar-default .primary-nav .navbar-nav li > a {
+    padding: 20px 15px;
+  }
+}
+.navbar-default .primary-nav .navbar-nav li.first > a {
+  padding-top: 20px;
+}
+.navbar-default .primary-nav .navbar-nav li.last > a {
+  padding-bottom: 20px;
+}
+.navbar-default .primary-nav .navbar-nav li .dropdown-menu {
+  padding: 0;
+  border: 0;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .navbar-default .primary-nav .navbar-nav li .dropdown-menu {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-default .primary-nav .navbar-nav li .dropdown-menu {
+    font-size: 18px;
+  }
+}
+.navbar-default .primary-nav .navbar-nav li .dropdown-menu a {
+  padding: 10px 15px;
+}
+.navbar-default .primary-nav .navbar-nav li .dropdown-menu .first > a {
+  padding-top: 10px;
+}
+.navbar-default .primary-nav .navbar-nav li .dropdown-menu .last > a {
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .navbar-default .primary-nav .navbar-nav li .dropdown-menu .last > a {
+    padding-bottom: 10px;
+  }
+}
+.navbar-default .primary-nav .navbar-nav .leaf.active > a,
+.navbar-default .primary-nav .navbar-nav .leaf.active > a:hover,
+.navbar-default .primary-nav .navbar-nav .leaf.active > a:focus {
   color: white;
   background-color: #333333;
   font-weight: bold;
 }
-.navbar-default .primary-nav .navbar-nav > .leaf > a {
-  padding: 10px 15px;
-}
-@media (min-width: 768px) {
-  .navbar-default .primary-nav .navbar-nav > .leaf > a {
-    padding: 20px 15px;
-  }
-}
-.navbar-default .primary-nav .navbar-nav > .leaf.first > a {
-  padding-top: 20px;
-}
-.navbar-default .primary-nav .navbar-nav > .leaf.last > a {
-  padding-bottom: 20px;
+.navbar-default .primary-nav .navbar-nav .open .dropdown-menu > li > a {
+  color: white;
 }
 .navbar-default .navbar-header {
   margin-right: auto;
