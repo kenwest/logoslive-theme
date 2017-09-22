@@ -8392,9 +8392,11 @@ ul {
   float: right;
   text-align: right;
 }
+.views-field-field-subtitle,
 .views-field-body {
   clear: both;
 }
+.not-front .region-content .views-field-field-subtitle,
 .not-front .region-content .views-field-body {
   display: block;
 }
@@ -8433,11 +8435,17 @@ ul {
 .view-national-blog .views-field-field-date-text,
 .view-activity-to-event .views-field-field-date-text,
 .view-national-news .views-field-field-date-text,
+.view-national-blog .views-field-field-subtitle,
+.view-activity-to-event .views-field-field-subtitle,
+.view-national-news .views-field-field-subtitle,
 .view-national-blog .views-field-body,
 .view-activity-to-event .views-field-body,
 .view-national-news .views-field-body {
   margin-left: 60px;
 }
+.view-national-blog .views-field-field-subtitle,
+.view-activity-to-event .views-field-field-subtitle,
+.view-national-news .views-field-field-subtitle,
 .view-national-blog .views-field-body,
 .view-activity-to-event .views-field-body,
 .view-national-news .views-field-body {
