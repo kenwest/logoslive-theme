@@ -2,6 +2,14 @@ h1, h2, h3, h4, h5, h6 {
   color: @brand-primary;
 }
 
+h1, h2, h3, h4 {
+  line-height: @line-height-large;
+}
+
+h5, h6 {
+  line-height: @line-height-computed;
+}
+
 p {
   margin: 0 0 @line-height-computed;
 }
@@ -24,14 +32,14 @@ ul {
 .page-header,
 .block-title,
 .views-field-title {
-  line-height: 2*@line-height-computed;
+  line-height: @line-height-large;
   padding: 0;
   border: 0;
   margin: 0 0 @line-height-computed;
   display: flex;
 
   i {
-    line-height: 2*@line-height-computed;
+    line-height: @line-height-large;
     width: 60px;
   }
 }
@@ -162,7 +170,7 @@ ul {
 
   .views-row {
     padding-top: @line-height-computed;
-    line-height: @line-height-computed;
+    line-height: @line-height-large;
     font-size: @font-size-large;
   }
 
@@ -250,7 +258,7 @@ ul {
   .field-name-field-date-text,
   .entity-property-summary {
     font-size: @font-size-large;
-    line-height: (2 * @line-height-computed);
+    line-height: @line-height-large;
   }
 
   .field-name-field-subtitle,
@@ -339,22 +347,22 @@ ul {
 .page-civicrm-event {
   .views-field-field-date-text {
     margin-left: 0;
-    line-height: (2 * @line-height-computed);
     font-weight: bold;
     font-style: normal;
     font-size: @font-size-large;
+    line-height: @line-height-large;
   }
 
   .views-field-nothing {    /* Address */
     color: @text-color;
-    line-height: @line-height-computed;
     font-size: @font-size-large;
+    line-height: @line-height-large;
   }
 
   .view-content h3 {
     color: @text-color;
-    line-height: @line-height-computed;
     font-size: @font-size-base;
+    line-height: @line-height-computed;
   }
 
   .views-field-amount {

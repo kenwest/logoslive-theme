@@ -7995,12 +7995,10 @@ a.link-button:focus {
 .view .view-grouping .view-grouping-header {
   font-size: 24px;
   font-weight: bold;
-  line-height: 40px;
 }
 .view .views-table caption {
   font-size: 18px;
   font-weight: bold;
-  line-height: 40px;
 }
 /*
  * Common block formatting
@@ -8339,6 +8337,16 @@ h5,
 h6 {
   color: #df0000;
 }
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.3333333;
+}
+h5,
+h6 {
+  line-height: 20px;
+}
 p {
   margin: 0 0 20px;
 }
@@ -8354,7 +8362,7 @@ ul {
 .page-header,
 .block-title,
 .views-field-title {
-  line-height: 40px;
+  line-height: 1.3333333;
   padding: 0;
   border: 0;
   margin: 0 0 20px;
@@ -8363,7 +8371,7 @@ ul {
 .page-header i,
 .block-title i,
 .views-field-title i {
-  line-height: 40px;
+  line-height: 1.3333333;
   width: 60px;
 }
 .block-views {
@@ -8477,7 +8485,7 @@ ul {
 }
 .view-reaching-city-civicrm-event-price .views-row {
   padding-top: 20px;
-  line-height: 20px;
+  line-height: 1.3333333;
   font-size: 18px;
 }
 .view-reaching-city-civicrm-event-price .views-row + h3 {
@@ -8613,7 +8621,7 @@ a.block-system .field-name-field-topics .field-item:focus {
 .block-system .field-name-field-date-text,
 .block-system .entity-property-summary {
   font-size: 18px;
-  line-height: 40px;
+  line-height: 1.3333333;
 }
 .block-system .field-name-field-subtitle,
 .block-system .field-name-field-date-text,
@@ -8782,21 +8790,21 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
  */
 .page-civicrm-event .views-field-field-date-text {
   margin-left: 0;
-  line-height: 40px;
   font-weight: bold;
   font-style: normal;
   font-size: 18px;
+  line-height: 1.3333333;
 }
 .page-civicrm-event .views-field-nothing {
   /* Address */
   color: #333333;
-  line-height: 20px;
   font-size: 18px;
+  line-height: 1.3333333;
 }
 .page-civicrm-event .view-content h3 {
   color: #333333;
-  line-height: 20px;
   font-size: 14px;
+  line-height: 20px;
 }
 .page-civicrm-event .views-field-amount {
   float: right;
