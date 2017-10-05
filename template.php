@@ -30,7 +30,7 @@ function logoslive_preprocess_page(&$variables) {
     jQuery(document).ready( function() {
       function standardiseHeight(elements) {
         elements.each( function() {
-          var height = jQuery(this).height();
+          var height = jQuery(this).outerHeight(false);
           var fraction = height % 20;
           if (jQuery(this).css("font-size") !== "14px" && fraction !== 0) {
             jQuery(this).css("min-height",  height - fraction + 20);
