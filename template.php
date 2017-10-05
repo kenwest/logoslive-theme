@@ -27,20 +27,28 @@ function logoslive_entity_property($variables) {
  */
 function logoslive_preprocess_page(&$variables) {
   $script = '
+    function cbfStandardiseHeight(elements) {
+      elements.each( function() {
+        var height = jQuery(this).outerHeight(false);
+        var fraction = height % 20;
+        if (jQuery(this).css("font-size") !== "14px" && fraction !== 0) {
+          jQuery(this).css("min-height",  height - fraction + 20).addClass("cbf-standard-height");
+        }
+        else {
+          cbfStandardiseHeight(jQuery(this).children().not("iframe, form"));
+        }
+      });
+    };
+    function cbfStandardiseHeights() {
+      jQuery(".cbf-standard-height").css("min-height", "").removeClass("cbf-standard-height");
+      cbfStandardiseHeight(jQuery(".main-container"));
+    };
     jQuery(document).ready( function() {
-      function standardiseHeight(elements) {
-        elements.each( function() {
-          var height = jQuery(this).outerHeight(false);
-          var fraction = height % 20;
-          if (jQuery(this).css("font-size") !== "14px" && fraction !== 0) {
-            jQuery(this).css("min-height",  height - fraction + 20);
-          }
-          else {
-            standardiseHeight(jQuery(this).children().not("iframe, form"));
-          }
-        });
-      };
-      standardiseHeight(jQuery(".main-container"));
-    });';
+      cbfStandardiseHeights();
+    });
+    jQuery(window).resize( function() {
+      cbfStandardiseHeights();
+    });
+  ';
   drupal_add_js($script, 'inline');
 }
