@@ -7789,11 +7789,17 @@ table .checkbox input[type="checkbox"] {
   display: inline-block;
   margin: 0 15px;
 }
+.logos-live-links .itunes {
+  margin-bottom: 20px;
+}
 .logos-live-links .itunes a,
 .logos-live-links .itunes a:hover,
 .logos-live-links .itunes a:focus {
   color: #aaaaaa;
   text-decoration: none;
+}
+.logos-live-links .rss {
+  margin-bottom: 20px;
 }
 .logos-live-links .rss a,
 .logos-live-links .rss a:hover,
