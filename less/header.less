@@ -22,7 +22,7 @@
   .navbar-brand:hover,
   .navbar-brand:focus,
   .lead {
-    color: @brand-primary;
+    color: @brand-secondary;
   }
 
   .navbar-brand {
@@ -179,6 +179,9 @@
         width: 180px;
         padding-right: @grid-gutter-width;
         height: (4*@line-height-computed);
+      }
+      @media (min-width: @screen-sm-min) {
+        width: 320px;
       }
 
       img {
